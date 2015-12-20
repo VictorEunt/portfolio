@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Bitter:400,700);
+
+$body-bg: #f9f9f9;
+$text-color: #0B0F22;
+$navbar-height: 75px;
+$navbar-default-bg: #f9f9f9;
+$navbar-inverse-link-color: white;
+$brand-primary: #f9f9f9;
+
+
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+.logo {
+  height: 150%;
+}
