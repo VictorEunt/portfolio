@@ -2,7 +2,7 @@
 
 $body-bg: #262626;
 $text-color: #ecf0f1;
-$navbar-height: 80px;
+$navbar-height: 70px;
 $navbar-default-bg: #262626;
 $navbar-default-link-color: #ecf0f1;
 $navbar-default-link-hover-color: #f1c40f;
@@ -16,26 +16,45 @@ $jumbotron-padding: 2%;
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
 .logo {
-  margin-left: 60%;
+  visibility: hidden;
 }
 .navbar-brand {
-   max-height: 100%;
-   height: 100%;
-   width: auto;
-   margin: 0 auto;
+  visibility: hidden;
 }
-.navbar-right {
-  padding-top: 3%;
-  margin-right: 6%;
-  margin-left: 5%;
 
+.navbar-right {
+  padding-top: 2%;
+  margin-top: 0px;
+  margin-left: 0px;
+  padding-right: 0px;
+
+}
+.navbar-collapse {
+  width: 100%;
+  margin-top: 2%;
+  text-align: center;
+}
+.navbar-toggle {
+  height: auto;
+  width: auto;
+  margin-left: 35%;
+  margin-right: 25%;
+  margin-top: 10%;
+  margin-bottom: -40px;
 }
 
 .nav_link {
-  font-size: 130%;
+  font-size: 150%;
   font-weight: bold;
-  margin-right: 20px;
+}
+
+.image_nav_link{
+  width: 25px;
+  height: 25px;
 }
 
 .jumbotron {
@@ -59,4 +78,48 @@ $jumbotron-padding: 2%;
 #skill_tile {
   margin-left: 8%;
   margin-right: 8%;
+}
+.icon-custom {
+  background-image: url("estrada_logo_white.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 200px; // replace with actual width
+  height: 100px; // replace with actual height
+  display: inline-block;
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+   .logo {
+    margin-top: 0;
+    margin-left: 60%;
+    width: 100%;
+    visibility: visible;
+   }
+  .navbar-brand {
+   max-height: 100%;
+   height: 100%;
+   width: auto;
+   margin: 0 auto;
+  }
+  .navbar-right {
+  padding-top: 1%;
+  margin-right: 6%;
+  margin-left: 5%;
+  margin-top: 0;
+  }
+  .nav_link {
+  font-size: 140%;
+  font-weight: bold;
+  margin-right: 20px;
+  }
+  .image_nav_link{
+  width: 25px;
+  height: 25px;
+  }
 }
