@@ -9,17 +9,17 @@
   </div>
   
 
-  <%= link_to image_tag("estrada_logo_white.png", :alt=>'Estrada Logo', :class=>'logo'), root_path, class: "navbar-brand" %>
+    <%= link_to image_tag("estrada_sun_border.png", :alt=>'Estrada Logo', :class=>'logo'), root_path, class: "navbar-brand" %>
   
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse navbar-collapse">
-    <ul class="nav navbar-nav navbar-right">
-      <li><%= link_to "About", root_path, class: "nav_link" %></li>
+    <ul class="active nav navbar-nav navbar-right">
+      <li class="<%= active_class(root_path) %>" id="home_option"><%= link_to "Home", root_path, class: "nav_link" %></li>
+      <li class="<%= active_class(about_path) %>"><%= link_to "About", about_path, class: "nav_link" %></li>
       <li><%= link_to "Projects", root_path, class: "nav_link" %></li>
+      <li><%= link_to "GitHub", root_path, class: "nav_link" %></li>
+      <li><%= link_to "Twitter", root_path, class: "nav_link" %></li>
       <li><%= link_to "Contact", root_path, class: "nav_link" %></li>
-       <li><%= link_to image_tag("twitter.png", :alt=>'twitter', :class=>'image_nav_link'), root_path, class: "nav_link" %></li>
-      <li><%= link_to image_tag("github.png", :alt=>'twitter', :class=>'image_nav_link'), root_path, class: "nav_link" %></li>
-
     </ul>
   </div><!-- /.navbar-collapse -->
   </div>
