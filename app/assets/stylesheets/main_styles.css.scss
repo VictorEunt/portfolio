@@ -1,5 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Bitter:400,700);
+@import url(https://fonts.googleapis.com/css?family=Alfa+Slab+One);
+@import url(https://fonts.googleapis.com/css?family=Lato);
 
+$font-family-sans-serif: 'Lato', sans-serif;
+$headings-font-family: 'Bitter', serif;
+$headings-font-weight: 700;
+$font-family-serif: 'Alfa Slab One', cursive;
 $body-bg: #f9f9f9;
 $text-color: #262626;
 $navbar-height: 60px;
@@ -7,7 +13,7 @@ $navbar-default-bg: #262626;
 $navbar-default-link-color: #f1c40f;
 $navbar-default-link-active-bg: #262626;
 $navbar-default-link-active-color: #1abc9c;
-$navbar-default-link-hover-color: #f9f9f9;
+$navbar-default-link-hover-color: #f39c12;
 $navbar-default-border: #262626;
 $navbar-default-toggle-hover-bg: none;
 $brand-primary: #f9f9f9;
@@ -24,72 +30,68 @@ $page-header-border-color: none;
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
-.logo {
-  display: none;
+.navbar {
+	position: relative;
 }
-/* .topNavLI {
-	width: 32.2033%;
-	margin-left: 1.6949%;
-	clear: none;
-	height: auto;
-	position: static;
-	transition: all .2s;
-	-o-transition: all .2s;
-	-moz-transition: all .2s;
-	-webkit-transition: all .2s;
-}
-.topNavLI:hover {
-    cursor: pointer;
-	margin-top: -12px;
-	transition: all .2s;
-	-o-transition: all .2s;
-	-moz-transition: all .2s;
-	-webkit-transition: all .2s;
-} */
 .navbar-brand {
-  display: none;
+	position: absolute;
+	left: 50%;
+	width: auto;
+	height: 80px;
+	margin-left: -60px !important;  /* 44px 50% of your logo width */
+	margin-top: -12px;
+	display: block;
+}
+.navbar-brand:hover {
+	opacity: .6;
+}
+.navbar-toggle {
+  display: block;
+  height: auto;
+  width: auto;
+  margin: 6px 0 0 2%;
+  float: left;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #f1c40f;
+	height: 5px;
+	margin-bottom: 5px;
+}
+.navbar-toggle:hover {
+	opacity: .6;
+}
+.navbar-text {
+	float:right;
+	margin-right: 5%;
+	margin-top: 20px;
+}
+#resume-link {
+	font-family: 'Bitter', serif;
+	color: #f1c40f;
+}
+#resume-link:hover {
+	text-decoration:none;
+	opacity: .6;
 }
 
 .navbar-right {
-  padding-top: 2%;
-  margin-top: 0px;
-  margin-left: 0px;
-  padding-right: 0px;
-
+	margin-top: 0px;
+	margin-left: 0px;
+	padding-right: 0px;
+	padding-top: 2%;
 }
 .navbar-collapse {
   width: 100%;
   margin-top: 2%;
   text-align: center;
 }
-
-.navbar-toggle {
-  display: block;
-  height: auto;
-  width: auto;
-  margin: 1% 0 0 15px;
-  float: left;
-}
-.navbar-toggle:hover {
-  opacity: 0.6;
-}
-
 .nav_link {
-  font-size: 150%;
-  font-weight: bold;
+  font-family: 'Bitter', serif;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 .nav_link:hover {
-}
-
-.image_nav_link{
-  width: 25px;
-  height: 25px;
-}
-
-.image_nav_link:hover {
-  opacity: 0.4;
-  color: #f1c40f;
 }
 
 .jumbotron {
@@ -126,56 +128,88 @@ $page-header-border-color: none;
   margin-right: 8%;
 }
 .icon-custom {
-  background-image: url("estrada_toggle_white.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 200px; // replace with actual width
-  height: 100px; // replace with actual height
-  display: inline-block;
+  display: hide;
 }
 h1 {
-  font-size: 38px;
-  font-weight: bold;
+	font-size: 38px;
 }
 h1 small {
-  font-size: 24px;
-  font-weight: bold;
-  color: #e67e22;
+	color: #f9f9f9;
+	font-size: 32px;
+	font-weight: bold;
+}
+h2{
+ color: #e67e22;
+ font-size: 26px;
+}
+h3 {
+ font-size: 20px;
+ color: #1abc9c;
+ font-family: 'Lato', sans-serif;
+}
+h4 {
+ color: #1abc9c;
+}
+
+.panel {
+	color: #f9f9f9;
+	background: #262626;
+	text-align: center;
+}
+#footer_copy {
+ color: #f9f9f9;
+ font-style: normal;
+ text-align: center;
+ margin-top: 20px;
+}
+#signature {
+ color: #f9f9f9;
+ font-style: normal;
+ text-align: center;
+ margin-top: -6px;
+}
+h4 {
+ font-family: 'Lato', sans-serif;
+}
+
+#footer_layout{
+	position: relative;
+	bottom: 0;
+	height: 75px;
+	width: 100%;
+	background: #1abc9c;
 }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) {
-  .navbar-toggle {
-  display: none;
-  }
-   .logo {
-    display: block;
-    margin-top: 6%;
-    margin-left: 15%;
-    width: 75%;
-   }
-   .logo:hover {
-    opacity: 0.4;
-   }
+	.navbar-toggle {
+		display: none;
+		}
+	.navbar-text {
+		display:none;
+		}
   .navbar-brand {
-   display: block;
-   max-height: 100%;
-   height: 100%;
+	 left: 10%;
+	 bottom: 0%;
+   max-height: 85px;
+   height: 85px;
    width: auto;
    margin: 0 auto;
   }
-  .navbar-right {
-  padding-top: 2%;
-  margin-top: 18px;
-  margin-right: 5%;
+ .navbar-right {
+  padding-top: 0%;
+  margin-top: 0%;
+	margin-bottom: 5px;
   margin-left: 0px;
-  }
+  margin-right: 1%;
+  padding-right: 0px;
+}
   .nav_link {
-  font-size: 125%;
+  font-size: 110%;
+  width: 100px;
+	font-weight: bold;
   }
-  li nav_link {
-  margin-right: 10px;
-  }
+
   #home_option {
   display: none;
   }
@@ -184,46 +218,38 @@ h1 small {
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md-min) {
-    .navbar-toggle {
-    display: none;
+	.navbar-toggle {
+	 display: none;
   }
-   .logo {
-    display: block;
-    margin-top: 3%;
-    margin-left: 20%;
-    width: 100%;
-   }
   .navbar-brand {
    display: block;
-   max-height: 100%;
-   height: 100%;
+   max-height: 90px;
+   height: 90px;
    width: auto;
    margin: 0 auto;
   }
   .navbar-right {
-  padding-top: 1%;
-  margin-top: 2%;
-  margin-left: 0px;
-  margin-right: 5%;
-  padding-right: 10px;
+
 
 }
   .nav_link {
+	 margin-bottom: 2px;
   }
+	h2 {
+		font-size: 36px;
+	}
+	h3 {
+		font-size: 28px;
+	}
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: $screen-lg-min) {
-   .logo {
-    display: block;
-    margin-top: 3%;
-    margin-left: 30%;
-    width: 100%;
-   }
   .navbar-brand {
    display: block;
-   max-height: 100%;
-   height: 100%;
+	 bottom: 0%;
+   max-height: 100px;
+   height: 100px;
    width: auto;
    margin: 0 auto;
   }
@@ -231,19 +257,16 @@ h1 small {
   display: none;
   }
   .navbar-right {
-  padding-top: 1%;
-  margin-right: 9%;
-  margin-left: 5%;
-  margin-top: 11px;
+  padding-top: 0%;
+  margin-right: 3%;
+  margin-left: 0%;
+  margin-top: 0px;
   }
   .nav_link {
-  font-size: 140%;
-  width: 135px;
-  }
-  
-  .image_nav_link{
-  width: 25px;
-  height: 25px;
+  font-size: 18px;
+  width: 125px;
+	margin-bottom: 6px;
+
   }
   .jumbotron {
   background-image: url("seattle_600.png");
@@ -268,4 +291,10 @@ h1 small {
   background: #262626;
   padding: 1%;
   }
+	h2 {
+		font-size: 36px;
+	}
+	h3 {
+		font-size: 28px;
+	}
 }

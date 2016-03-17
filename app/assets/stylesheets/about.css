@@ -1,0 +1,256 @@
+  .page-header {
+    padding: 2% 2% 2% 6%;
+    opacity: .8;
+  }
+  #about {
+    color: #f9f9f9;
+  }
+  #victor {
+    color: #f1c40f;
+  }
+  .yellow_accent {
+    color: #f1c40f;
+  }
+  .img-rounded {
+    width: 100%;
+  }
+  .img-circle {
+    width: 100px;
+    margin-bottom: 5px;
+  }
+  #user_testing_photo {
+    margin-top: 1%;
+    text-align: center;
+  }
+  .about_h2 {
+  }
+  .about_box{
+    font-size: 16px;
+    margin-top: 5%;
+		padding: 5%;
+  }
+  .recommend_box{
+    background: #ecf0f1;
+    color: #666666;
+    font-size: 16px;
+    margin-top: 0%;
+		margin-bottom: 10%;
+    padding: 6%;
+  }
+  .photo_box {
+    text-align: center;
+  }
+  .box_name{
+	 	margin-top: -1px;
+ 		margin-bottom: -6px;
+	}
+  .box_title{
+    line-height: 95%;
+    margin-bottom: 10px;
+  }
+
+  .recommend_header {
+    margin-top: 5%;
+    padding: 2%
+  }
+  #engaging {
+    text-align: center;
+  }  
+  #workplace {
+    text-align: center;
+		margin-top: -5px;
+  }
+	.logo {
+		text-align: center;
+	}
+		#rails_logo {
+		margin-top: 5px;
+		margin-bottom: 20px;
+		height: 90px;
+		width: 215px;
+		}
+		#git_logo {
+		margin-top: 25px;
+		margin-bottom: 25px;
+		height: 45px;
+		width: 110px;
+		}
+		#morae_logo {
+		margin-top: 10px;
+		height: 45px;
+		width: 150px;
+		}
+		#zoom_logo {
+		margin-top: 15px;
+		margin-bottom: 50px;
+		height: 80px;
+		width: 160px;
+		}
+		#slack {
+		margin-top: 15px;
+		height: 55px;
+		width: 175px;
+		}
+		#github {
+		margin-top: 20px;
+		margin-bottom: 50px;
+		height: 60px;
+		width: 185px;
+		}
+		#dita_logo {
+		margin-top: 20px;
+		height: 75px;
+		width: 195px;
+		}
+		#xml_logo {
+		margin-top: 0px;
+		margin-bottom: 50px;
+		height: 65px;
+		width: 175px;
+		}
+		.logo_heading {
+			margin-top: 30px;
+			text-align: center;
+			color: #666666;
+		}
+		.logo_row {
+			margin-top: 0%;
+			background-color: #ecf0f1;
+		}
+		.logo_row_2 {
+			margin-top: 0%;
+			background-color: #ecf0f1;
+		}
+
+	/* Small devices (tablets, 768px and up) */
+	@media (min-width: 768px) {
+	  #user_testing_photo {
+    margin-top: 4%;
+    text-align: center;
+  	}
+		.about_box{
+		 margin-top: 4%;
+		 padding: 1% 5% 2% 5%;
+		}
+		#git_logo {
+		margin-top: 30px;
+		margin-bottom: 0px;
+		height: 35%;
+		width: 35%;
+		}
+		#zoom_logo {
+		margin-top: 0px;
+		margin-bottom: 0px;
+		}
+		#morae_logo {
+		margin-top: 25px;
+		margin-bottom: 0px;
+		}
+		#github {
+		margin-top: 20px;
+		margin-bottom: 0px;
+		}
+		#slack {
+		margin-top: 20px;
+		margin-bottom: 0px;
+		height: 50%;
+		width: 50%;
+		}
+		#dita_logo {
+		margin-top: 7px;
+		}
+		#xml_logo {
+		margin-top: 13px;
+		}
+		.logo_heading {
+		margin-top: 30px;
+		margin-bottom: 15px;
+		}
+	}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	  #user_testing_photo {
+    display: none;
+  }
+		.about_box{
+		 margin: 6%;
+		 font-size: 18px;
+		}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+		.page-header {
+		}
+		#user_testing_photo {
+		display: none;
+		}
+		.about_box{
+		 margin: 8% 6% 0% 6%;
+		}
+		.recommend_box {
+			width: 95%;
+			height: 445px;
+			margin-left: 2%;
+			margin-bottom: 15%;
+			padding: 10%;
+		}
+		.logo {
+			text-align: center;
+		}
+		#rails_logo {
+		margin-top: 5%;
+		height: 60%;
+		width: 60%;
+		}
+		#git_logo {
+		margin-top: 10%;
+		height: 35%;
+		width: 35%;
+		}
+		#morae_logo {
+		margin-top: 7%;
+		height: 40%;
+		width: 40%;
+		}
+		#zoom_logo {
+		margin-top: 2%;
+		height: 45%;
+		width: 45%;
+		}
+		#dita_logo {
+		margin-top: 2%;
+		height: 45%;
+		width: 45%;
+		}
+		#xml_logo {
+		margin-top: 2%;
+		height: 45%;
+		width: 45%;
+		}
+		#github {
+		margin-top: 5%;
+		height: 60%;
+		width: 55%;
+		}
+		#slack {
+		margin-top: 6%;
+		height: 50%;
+		width: 50%;
+		}
+		.logo_heading {
+			text-align: center;
+			margin-bottom: 15px;
+		}
+		.logo_row {
+			margin-top: 0%;
+			background-color: #ecf0f1;
+		}
+		.logo_row_2 {
+			margin-top: 0%;
+			background-color: #ecf0f1;
+		}
+
+	
+}

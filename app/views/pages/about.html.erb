@@ -2,67 +2,122 @@
 
   <div class="page-header">
     <div class="about_header">
-      <h1 id="about">About <span id="victor">Victor</span></br><small>Graduating with a Master's in Technical Communication, I work with others everyday to <span class="yellow_accent">write</span>, <span class="yellow_accent">test</span>, and <span class="yellow_accent">design</span> user-centered content.</small></h1>
+      <h1><small id="about">About <span id="about">Victor<br/></span>Graduating with a Master's in Technical Communication, I work with others everyday to <span class="yellow_accent">write</span>, <span class="yellow_accent">test</span>, and <span class="yellow_accent">design</span> user-centered content.</small></h1>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-6">
+    <div class="col-xs-12 col-sm-6 col-md-12">
         <div id="user_testing_photo">
           <%= link_to image_tag("user_testing_2.png", :alt=>'user testing', :class=>'img-rounded') %>
         </div>
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-6">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-md-offset-0 col-lg-6">
       <div class="about_box">
-        <h2 class="about_h2">My past year ...</h2>
-        <p>Currently, I test and develop content for a university demographic that exceeds 40,000 visitors a month. Working with the content management system Drupal, I manage over 20 sites with the University of North Texas.</p>
+        <h3>My passion</h3>
+				<h6>Practicing UX principles</h6>
+        <p>I love working with people. After all, where would technology be without people? As a UX Writer and Developer, I have placed user research and testing at the forefront of my web development and content management. By using data to design and create user-centerd experiences, my work refelcts the future of technical communication.</p>
+			</div>
+		</div>
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-0 col-lg-6">
+      <div class="about_box">
+        <h3>My past year</h3>
+					<h6>Managing a CMS with Drupal</h6>
+        <p>Currently, I test and develop content for a university demographic that exceeds 40,000 visitors a month. Working with the content management system Drupal, I manage over 20 sites with the University of North Texas for their Division of Student Affairs.</p>
       </div>
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-6">
-      <div class="about_box">
-        <h2 class="about_h2">My passion ...</h2>
-        <p>Currently, I test and develop content for a university demographic that exceeds 40,000 visitors a month. Working with the content management system Drupal, I manage over 20 sites with the University of North Texas.</p>
-      </div>
-    </div>
-    
   </div>
-
-<div class="row">
-  <div class="col-xs-12 col-md-12">
+	
+  <div class="row recommend_row">
+   <div class="col-xs-12 col-sm-12 col-md-12">
     <div class="recommend_header">
-      <h3 id="engaging">Making the Experience Engaging</h4>
-      <h4 id="workplace">Workplace Testimonials</h5>
+			<h2 id="engaging">My Tools Help Me Bring People Together</h2>
+      <h3 id="workplace">Interaction and collabortion drive me to develop my skills and tools.<br/>Here are a few of my favorite.</h3>
+    </div>
+  </div>
+</div>
+	
+ <div class="row logo_row">
+	 
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+			<h5 class="logo_heading">Web Development</h5>
+			<div class="col-xs-12 col-sm-6 col-md-6"><div class="logo"><%= link_to image_tag("git_logo.png", :alt=>'gihub logo', :id=>'git_logo') %></div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-6"><div class="logo"><%= link_to image_tag("Ruby_on_Rails-logo2.png", :alt=>'ruby on rails logo', :id=>'rails_logo') %></div>
+		 </div>		
+		</div>		
+	
+	 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+		<h5 class="logo_heading">UX Design</h5>
+		<div class="col-xs-12 col-sm-6 col-md-6">
+			<div class="logo"><%= link_to image_tag("morae-logo.png", :alt=>'morae', :id=>'morae_logo') %></div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-6">
+			<div class="logo"><%= link_to image_tag("userzoom-logo.png", :alt=>'xml logo', :id=>'zoom_logo') %></div>
+		</div>
+	 </div> 
+	</div>
+	
+	<div class="row logo_row_2">	
+ <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+		<h5 class="logo_heading">Cloud-based Collaboration</h5>
+		<div class="col-xs-12 col-sm-6 col-md-6">
+		 <div class="logo"><%= link_to image_tag("slack.png", :alt=>'slack logo', :id=>'slack') %></div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-6">
+			<div class="logo"><%= link_to image_tag("github_logo.png", :alt=>'github logo', :id=>'github') %></div>
+		</div>
+ </div>
+	 
+	 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+	  <h5 class="logo_heading">Technical Communication</h5>
+		<div class="col-xs-12 col-sm-6 col-md-6">
+			<div class="logo"><%= link_to image_tag("dita_2.png", :alt=>'dita logo', :id=>'dita_logo') %></div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-6">
+			<div class="logo"><%= link_to image_tag("xml_logo2.png", :alt=>'xml logo', :id=>'xml_logo') %></div>
+		</div>
+	 </div>	 
+		 
+ </div>
+
+
+<div class="row workplace_row">
+  <div class="col-xs-12 col-sm-12 col-md-12">
+    <div class="recommend_header">
+      <h2 id="engaging">Making the Experience Engaging</h2>
+      <h3 id="workplace">Workplace Testimonials</h3>
     </div>
   </div>
 </div>
 
   <div class="row">
-    <div class="col-xs-12 col-sm-4 col-md-4">
+    <div class="col-xs-12 col-sm-12 col-md-4">
       <div class="recommend_box">
         <div class="photo_box">
           <%= link_to image_tag("hope_garcia.jpg", :alt=>'Kate Neal', :class=>'img-circle') %>
-          <div class="box_name">Dr. Hope Garcia</div>
-          <div class="box_title">Executive Director of Student Affairs Administration</div>
+          <h4 class="box_name">Dr. Hope Garcia</h4>
+          <h6 class="box_title">Executive Director<br/>of Student Affairs Administration</h6>
         </div>
         <p>"In his position, Victor has managed the difficult job of keeping our Division's web presence as cohesive as possible, while still meeting the needs of over 20 unique departments. And with his emotional intelligence, he is able to stay calm and work through difficult processes. Bringing this to the workplace takes a special talent that can still make the client feel heard, understood, and taken care of."</p>
       </div>
     </div>
-    <div class="col-xs-12 col-sm-4 col-md-4">
+    <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="recommend_box">
           <div class="photo_box">
             <%= link_to image_tag("kate_neal.jpg", :alt=>'Kate Neal', :class=>'img-circle') %>
-            <div class="box_name">Kate Neal</div>
-            <div class="box_title">Marketing Specialist</div>
+            <h4 class="box_name">Kate Neal</h4>
+					 <h6 class="box_title">Marketing Specialist</h6>
           </div>
           <p>“Victor goes above and beyond our divisions expectations on a regular basis. He puts usability and design at the forefront of every decision, no matter how small a decision it may be. He understands the complexity of managing content while making the experience engaging and enjoyable.”</p>
         </div>
     </div>
-    <div class="col-xs-12 col-sm-4 col-md-4">
+    <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="recommend_box">
           <div class="photo_box">
             <%= link_to image_tag("slee.jpg", :alt=>'Kate Neal', :class=>'img-circle') %>
-            <div class="box_name">Stephanie Brown</div>
-            <div class="box_title">Assistant Director for Orientation<br/>and Transition Programs</div>
+            <h4 class="box_name">Stephanie Brown</h4>
+            <h6 class="box_title">Assistant Director for Orientation<br/>and Transition Programs</h6>
           </div>
           <p>“Victor is an ideal person to collaborate with. He is very knowledgeable about the world of marketing and web design and is patient with his clients. Working with Victor is easy, in that he provides organized communication and produces polished websites. He is intentional about his designs and knows how to reach users.”</p>
         </div>
@@ -71,82 +126,3 @@
 
 </div>
 
-<style>
-  .page-header {
-    padding: 2% 2% 2% 6%;
-    opacity: .8;
-  }
-  #about {
-    color: #f9f9f9;
-  }
-  #victor {
-    color: #f1c40f;
-  }
-  h1 small {
-    color: #f9f9f9;
-    font-size: 32px;
-  }
-  .yellow_accent {
-    color: #f1c40f;
-  }
-  .img-rounded {
-    width: 100%;
-  }
-  .img-circle {
-    width: 100px;
-    margin-bottom: 5px;
-  }
-  #user_testing_photo {
-    margin-top: 1%;
-    text-align: center;
-  }
-  .about_h2 {
-    color: #1abc9c;
-  }
-  .about_box{
-    background: #ecf0f1;
-    color: #666666;
-    font-size: 125%;
-    margin-top: 5%;
-    padding: 5%;
-  }
-  .recommend_box{
-    background: #ecf0f1;
-    color: #666666;
-    font-size: 125%;
-    margin-top: 5%;
-    padding: 5%;
-  }
-  .photo_box {
-    text-align: center;
-  }
-  .box_name{
-    font-size: 115%;
-    font-weight: normal;
-    color: #1abc9c;
-    line-height: 105%;
-  }
-  .box_title{
-    color: #666666;
-    font-size: 80%;
-    font-weight: bold;
-    line-height: 95%;
-    margin-bottom: 10px;
-  }
-  .recommend_header {
-    border-top: solid 2px #ecf0f1;
-    border-bottom: solid 2px #ecf0f1;
-    margin-top: 5%;
-    padding: 2%
-  }
-  #engaging {
-    color: #e67e22;
-    font-weight: bold;
-    text-align: center;
-  }  
-  #workplace {
-    color: #1abc9c;
-    font-weight: normal;
-    text-align: center;
-  }
-</style>
