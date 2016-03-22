@@ -1,0 +1,33 @@
+<div id="contact_form">
+	<div id="contact_heading">
+		<h2>Let's get in touch</h2><h4>and talk about UX in the Seattle area.</h4>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-body">
+
+			<%= form_for Friend.new do |f| %>
+
+			<div class="form-group">
+				<h5 class="contact_label"><%= f.label :name %></h5>
+				<%= f.text_field :name, class: "form-control input-lg" %>
+			</div>
+			<div class="form-group">
+				<h5 class="contact_label"><%= f.label :email %></h5>
+				<%= f.text_field :email, class: "form-control input-lg" %>
+			</div>
+			<div class="form-group">
+				<h5 class="contact_label"><%= f.label :subject %></h5>
+				<%= f.text_field :subject, class: "form-control input-lg" %>
+			</div>
+			<div class="form-group">
+				<h5 class="contact_label"><%= f.label :message %></h5>
+				<%= f.text_area :message, class: "form-control input-lg" %>
+			</div>
+			<div class="form-group">
+				<%= f.submit "Send", class: "btn btn-primary", id: "contact_send" %>
+			</div>
+			</div>
+
+			<% end %>
+	</div>
+</div>

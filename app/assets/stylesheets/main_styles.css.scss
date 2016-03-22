@@ -22,6 +22,16 @@ $jumbotron-padding: 2%;
 $navbar-default-toggle-border-color: #262626;
 $component-active-color: #f9f9f9;
 $page-header-border-color: none;
+$input-bg: #f9f9f9;
+$btn-font-weight: bold;
+$btn-primary-color: #1abc9c;
+$btn-primary-bg: #f9f9f9;
+$btn-primary-border: #1abc9c;
+$input-border: #bdc3c7;
+$input-border-radius-large: 0;
+$panel-default-border: #f9f9f9;
+$panel-bg: #f9f9f9;
+$panel-inner-border: #f9f9f9;
 
 
 @import 'bootstrap-sprockets';
@@ -34,13 +44,13 @@ $page-header-border-color: none;
 	position: relative;
 }
 .navbar-brand {
+	display: block;
 	position: absolute;
 	left: 50%;
 	width: auto;
 	height: 80px;
 	margin-left: -60px !important;  /* 44px 50% of your logo width */
 	margin-top: -12px;
-	display: block;
 }
 .navbar-brand:hover {
 	opacity: .6;
@@ -91,42 +101,6 @@ $page-header-border-color: none;
   font-weight: normal;
 }
 
-.nav_link:hover {
-}
-
-.jumbotron {
-  background-image: url("seattle_600.png");
-  background-size: cover;
-  height: 450px;
-  margin: 0% 2% 10% 2%;
-}
-.page-header {
-  background-image: url("card_sort_group_2.png");
-  background-size: cover;
-}
-#jhead {
-  margin-top: 150px;
-  margin-left: 0%;
-  color: #262626;
-  font-size: 38px;
-  font-weight: bold;
-  background: #f9f9f9;
-  padding: 2%;
-}
-#jpara {
-  margin-top: 7%;
-  margin-left: 0%; 
-  background: #262626;
-  padding: 3%;
-  color: #f9f9f9;
-}
-.skill_row {
-
-}
-#skill_tile {
-  margin-left: 8%;
-  margin-right: 8%;
-}
 .icon-custom {
   display: hide;
 }
@@ -149,13 +123,9 @@ h3 {
 }
 h4 {
  color: #1abc9c;
+ font-family: 'Lato', sans-serif;
 }
 
-.panel {
-	color: #f9f9f9;
-	background: #262626;
-	text-align: center;
-}
 #footer_copy {
  color: #f9f9f9;
  font-style: normal;
@@ -167,9 +137,6 @@ h4 {
  font-style: normal;
  text-align: center;
  margin-top: -6px;
-}
-h4 {
- font-family: 'Lato', sans-serif;
 }
 
 #footer_layout{
@@ -218,20 +185,11 @@ h4 {
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md-min) {
-	.navbar-toggle {
-	 display: none;
-  }
   .navbar-brand {
-   display: block;
    max-height: 90px;
    height: 90px;
-   width: auto;
-   margin: 0 auto;
+
   }
-  .navbar-right {
-
-
-}
   .nav_link {
 	 margin-bottom: 2px;
   }
@@ -266,31 +224,8 @@ h4 {
   font-size: 18px;
   width: 125px;
 	margin-bottom: 6px;
+  }
 
-  }
-  .jumbotron {
-  background-image: url("seattle_600.png");
-  background-size: cover;
-  height: 450px;
-  margin: 2% 2% 10% 2%;
-  }
-  #jhead {
-  margin-top: 8%;
-  margin-left: 35%;
-  margin-right: 0%;
-  color: #262626;
-  font-size: 38px;
-  font-weight: bold;
-  background: #f9f9f9;
-  padding: 1%;
-  }
-  #jpara {
-  margin-top: 10%;
-  margin-left: 35%; 
-  margin-right: 0%;
-  background: #262626;
-  padding: 1%;
-  }
 	h2 {
 		font-size: 36px;
 	}

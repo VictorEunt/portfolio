@@ -1,0 +1,21 @@
+#contact_panel {
+	margin-top: 10%;
+	margin-right: 5%;
+	padding-left: 20px; 
+	padding-top: 1px;
+	background: #ecf0f1;
+	color: #262626;
+	height: 300px;
+}
+
+.connect_link {
+	color: #1abc9c;
+}
+
+.connect_link:hover {
+	color: #16a085;
+}
+
+#download_resume {
+	margin-top: 25px;
+}

@@ -1,7 +1,10 @@
   .page-header {
+		background-image: url("card_sort_group_2.png");
+    background-size: cover;
     padding: 2% 2% 2% 6%;
     opacity: .8;
   }
+
   #about {
     color: #f9f9f9;
   }
@@ -100,7 +103,7 @@
 		#dita_logo {
 		margin-top: 20px;
 		height: 75px;
-		width: 195px;
+		width: 160px;
 		}
 		#xml_logo {
 		margin-top: 0px;
