@@ -1,33 +1,49 @@
-<div id="contact_form">
-	<div id="contact_heading">
-		<h2>Let's get in touch</h2><h4>and talk about UX in the Seattle area.</h4>
+<div class="row">
+	<div class="col-md-3 col-md-offset-1">
+		<div id="contact_panel">
+			<h3>Connect With Me</h3><br/>
+			<p>Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= mail_to "victorestrada@my.unt.edu", "VictorEstrada@my.unt.edu", :class=>"connect_link" %></p>
+			<p>Twitter:&nbsp;&nbsp;&nbsp;<%= link_to "twitter.com/victoreUNT", "https://twitter.com/victoreUNT", :class=>"connect_link" %></p>
+			<p>Mobile:&nbsp;&nbsp;&nbsp;&nbsp;415-715-9039</p>
+			<div><%= link_to "Victor's Resume", "estrada_resume.pdf", class: "btn btn-primary btn-lg", id: "download_resume" %></div>
+		</div>
 	</div>
-	<div class="panel panel-default">
-		<div class="panel-body">
 
-			<%= form_for Friend.new do |f| %>
+  <div class="col-md-6">
+    <div id="contact_form">
+      <div id="contact_heading">
+        <h2>Let's get in touch</h2><h4>and talk about UX in the Seattle area.</h4>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-body">
 
-			<div class="form-group">
-				<h5 class="contact_label"><%= f.label :name %></h5>
-				<%= f.text_field :name, class: "form-control input-lg" %>
-			</div>
-			<div class="form-group">
-				<h5 class="contact_label"><%= f.label :email %></h5>
-				<%= f.text_field :email, class: "form-control input-lg" %>
-			</div>
-			<div class="form-group">
-				<h5 class="contact_label"><%= f.label :subject %></h5>
-				<%= f.text_field :subject, class: "form-control input-lg" %>
-			</div>
-			<div class="form-group">
-				<h5 class="contact_label"><%= f.label :message %></h5>
-				<%= f.text_area :message, class: "form-control input-lg" %>
-			</div>
-			<div class="form-group">
-				<%= f.submit "Send", class: "btn btn-primary", id: "contact_send" %>
-			</div>
-			</div>
+          <%= form_for Friend.new do |f| %>
 
-			<% end %>
-	</div>
+          <div class="form-group">
+            <h5 class="contact_label"><%= f.label :name %></h5>
+            <%= f.text_field :name, class: "form-control input-lg" %>
+          </div>
+          <div class="form-group">
+            <h5 class="contact_label"><%= f.label :email %></h5>
+            <%= f.text_field :email, class: "form-control input-lg" %>
+          </div>
+          <div class="form-group">
+            <h5 class="contact_label"><%= f.label :subject %></h5>
+            <%= f.text_field :subject, class: "form-control input-lg" %>
+          </div>
+          <div class="form-group">
+            <h5 class="contact_label"><%= f.label :message %></h5>
+            <%= f.text_area :message, class: "form-control input-lg" %>
+          </div>
+          <div class="form-group">
+            <%= f.submit "Send", class: "btn btn-primary", id: "contact_send" %>
+          </div>
+          </div>
+
+          <% end %>
+      </div>
+    </div>
+  </div>
 </div>
+
+
