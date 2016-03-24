@@ -1,33 +1,49 @@
-<%= form_for(@client) do |f| %>
-  <% if @client.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@client.errors.count, "error") %> prohibited this client from being saved:</h2>
+<div class="row">
+	<div class="col-md-3 col-md-offset-1">
+		<div id="contact_panel">
+			<h3>Connect With Me</h3><br/>
+			<p>Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= mail_to "victorestrada@my.unt.edu", "VictorEstrada@my.unt.edu", :class=>"connect_link" %></p>
+			<p>Twitter:&nbsp;&nbsp;&nbsp;<%= link_to "twitter.com/victoreUNT", "https://twitter.com/victoreUNT", :class=>"connect_link" %></p>
+			<p>Mobile:&nbsp;&nbsp;&nbsp;&nbsp;415-715-9039</p>
+			<div><%= link_to "Victor's Resume", "estrada_resume.pdf", class: "btn btn-primary btn-lg", id: "download_resume" %></div>
+		</div>
+	</div>
 
-      <ul>
-      <% @client.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+  <div class="col-md-6">
+    <div id="contact_form">
+      <div id="contact_heading">
+        <h2>Let's get in touch</h2><h4>and talk about UX in the Seattle area.</h4>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-body">
+
+          <%= form_for(@client) do |f| %>
+
+          <div class="form-group">
+            <h5 class="contact_label"><%= f.label :name %></h5>
+            <%= f.text_field :name, class: "form-control input-lg" %>
+          </div>
+          <div class="form-group">
+            <h5 class="contact_label"><%= f.label :email %></h5>
+            <%= f.text_field :email, class: "form-control input-lg" %>
+          </div>
+          <div class="form-group">
+            <h5 class="contact_label"><%= f.label :subject %></h5>
+            <%= f.text_field :subject, class: "form-control input-lg" %>
+          </div>
+          <div class="form-group">
+            <h5 class="contact_label"><%= f.label :message %></h5>
+            <%= f.text_area :message, class: "form-control input-lg" %>
+          </div>
+          <div class="form-group">
+            <%= f.submit "Send", class: "btn btn-primary", id: "contact_send" %>
+          </div>
+          </div>
+
+          <% end %>
+      </div>
     </div>
-  <% end %>
+  </div>
+</div>
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :subject %><br>
-    <%= f.text_area :subject %>
-  </div>
-  <div class="field">
-    <%= f.label :message %><br>
-    <%= f.text_area :message %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+
