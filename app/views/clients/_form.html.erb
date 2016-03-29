@@ -1,15 +1,5 @@
-<div class="row">
-	<div class="col-md-3 col-md-offset-1">
-		<div id="contact_panel">
-			<h3>Connect With Me</h3><br/>
-			<p>Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= mail_to "victorestrada@my.unt.edu", "VictorEstrada@my.unt.edu", :class=>"connect_link" %></p>
-			<p>Twitter:&nbsp;&nbsp;&nbsp;<%= link_to "twitter.com/victoreUNT", "https://twitter.com/victoreUNT", :class=>"connect_link" %></p>
-			<p>Mobile:&nbsp;&nbsp;&nbsp;&nbsp;415-715-9039</p>
-			<div><%= link_to "Victor's Resume", "estrada_resume.pdf", class: "btn btn-primary btn-lg", id: "download_resume" %></div>
-		</div>
-	</div>
-
-  <div class="col-md-6">
+<div class="row form_row">
+  <div class="col-sm-8 col-md-8 col-lg-6 col-lg-offset-1">
     <div id="contact_form">
       <div id="contact_heading">
         <h2>Let's get in touch</h2><h4>and talk about UX in the Seattle area.</h4>
@@ -36,7 +26,7 @@
             <%= f.text_area :message, class: "form-control input-lg" %>
           </div>
           <div class="form-group">
-            <%= f.submit "Send", class: "btn btn-primary", id: "contact_send" %>
+            <%= f.submit "Send", class: "btn btn-primary btn-lg", id: "contact_send" %>
           </div>
           </div>
 
@@ -44,6 +34,15 @@
       </div>
     </div>
   </div>
+	<div class="col-sm-4 col-md-4 col-lg-3">
+		<div id="contact_panel">
+			<h3>Connect With Me</h3><br/>
+      <h5>Email</h5><p><%= mail_to "victorestrada@my.unt.edu", "VictorEstrada@my.unt.edu", :class=>"connect_link" %></p>
+			<h5>Twitter</h5><p><%= link_to "twitter.com/victoreUNT", "https://twitter.com/victoreUNT", :class=>"connect_link" %></p>
+			<h5>Mobile</h5><p>415-715-9039</p>
+			<div><%= link_to "Victor's Resume", "estrada_resume.pdf", class: "btn btn-primary btn-lg", id: "download_resume" %></div>
+		</div>
+	</div>
 </div>
 
 

@@ -1,4 +1,7 @@
-  .page-header {
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */  
+
+.page-header {
 		background-image: url("card_sort_group_2.png");
     background-size: cover;
     padding: 2% 2% 2% 6%;
@@ -23,13 +26,19 @@
   }
   #user_testing_photo {
     margin-top: 1%;
+    margin-bottom: 7%;
     text-align: center;
   }
   .about_h2 {
   }
-  .about_box{
+  #about_box_1 {
     font-size: 16px;
-    margin-top: 5%;
+    margin-top: 0%;
+		padding: 5%;
+  }
+  #about_box_2 {
+    font-size: 16px;
+    margin-top: 0%;
 		padding: 5%;
   }
   .recommend_box{
@@ -128,13 +137,16 @@
 	/* Small devices (tablets, 768px and up) */
 	@media (min-width: 768px) {
 	  #user_testing_photo {
-    margin-top: 4%;
-    text-align: center;
+    margin-top: 5%;
   	}
-		.about_box{
-		 margin-top: 4%;
-		 padding: 1% 5% 2% 5%;
-		}
+    #about_box_1 {
+    margin-top: 0%;
+    padding: 1% 5% 2% 5%;
+    }
+    #about_box_2 {
+    margin-top: 4%;
+    padding: 1% 5% 2% 5%;
+    }
 		#git_logo {
 		margin-top: 30px;
 		margin-bottom: 0px;
@@ -166,20 +178,39 @@
 		margin-top: 13px;
 		}
 		.logo_heading {
-		margin-top: 30px;
+		margin-top: 25px;
 		margin-bottom: 15px;
 		}
+    .recommend_box{
+    margin-top: 0%;
+		margin-bottom: 5%;
+    padding: 5% 8% 8% 8%;
+    height: 375px;
+    }
+    .recommend_row{
+      margin-bottom: 10%;
+    }
 	}
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-	  #user_testing_photo {
+    #user_testing_photo {
     display: none;
   }
-		.about_box{
-		 margin: 6%;
-		 font-size: 18px;
+		#about_box_1 {
+     margin-top: 5%;
+     font-size: 18px;    
 		}
+		#about_box_2 {
+     margin-top: 5%;
+     font-size: 18px;
+		}
+    .recommend_box{
+    margin-top: 0%;
+		margin-bottom: 5%;
+    padding: 5% 8% 8% 8%;
+    height: 550px;
+    }
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -189,12 +220,15 @@
 		#user_testing_photo {
 		display: none;
 		}
-		.about_box{
-		 margin: 8% 6% 0% 6%;
+		#about_box_1 {
+		 margin: 8% 5% 0% 10%;
+		}
+    #about_box_2 {
+		 margin: 8% 10% 0% 5%;
 		}
 		.recommend_box {
 			width: 95%;
-			height: 445px;
+			height: 545px;
 			margin-left: 2%;
 			margin-bottom: 15%;
 			padding: 10%;

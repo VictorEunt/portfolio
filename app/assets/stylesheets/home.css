@@ -9,7 +9,7 @@
 #jhead {
   margin-top: 150px;
   margin-left: 0%;
-  color: #262626;
+  color: #2c3e50;
   font-size: 38px;
   font-weight: bold;
   background: #f9f9f9;
@@ -18,9 +18,10 @@
 #jpara {
   margin-top: 7%;
   margin-left: 0%; 
-  background: #262626;
+  background: #f9f9f9;
   padding: 3%;
-  color: #f9f9f9;
+  color: #2c3e50;
+  font-weight: bold;
 }
 .tile_row {
 	margin-top: 10%;
@@ -30,17 +31,17 @@
   margin-left: 8%;
   margin-right: 8%;
   margin-bottom: 5%;
-	height: 300px;
+	height: 100%;
 	padding: 4% 6% 4% 6%;
 }
 #tile_1 {
-	background: #95a5a6;
+	background: #34495e;
 }
 #tile_2 {
 	background: #1abc9c;
 }
 #tile_3 {
-	background: #f39c12;
+	background: #95a5a6;
 }
 .tile_head{
  color: #f9f9f9;
@@ -50,29 +51,47 @@
 	margin-top: -9px;
 }
 .skill_row {
-	margin-bottom: 5%;
+	margin-bottom: 10%;
   background-color: #ecf0f1;
-  height: 500px;
+  height: 100%;
+}
+.skill_row_2 {
+  margin-top: 0%;
+	margin-bottom: 20%;
+  padding-top: 5%;
+  padding-bottom: 15%;
+  background-color: #ecf0f1;
+  height: 100%;
 }
 #skill_title{
   text-align: center;
   padding-top: 15px;
+  padding-left: 2%;
+  padding-right: 2%;
   margin-bottom: 40px;
 }
-.skill_head{
-  color: #1abc9c;
+.skill_subhead{
+  color: #666666;
 }
-.skill_subhead {
-	margin-top: -9px;
+.skill_head {
+	margin-top: 15px;
+  margin-bottom: -10px;
   padding-top: 5px;
-  color: #262626;
+  color: #1abc9c;
   font-size: 20px;
   font-weight: normal;
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+#skill_title{
+  padding-top: 15px;
+  margin-bottom: 40px;
+}
 
 
+  .skill_head{
+    padding-top: 15%;
+  }
 }
 
 
@@ -94,7 +113,6 @@
     margin-right: 5%;
     font-size: 76px;
     padding: 1%;
-    opacity: .9;
     }
     #jpara {
     font-size: 30px;
@@ -102,7 +120,6 @@
     margin-left: 0%; 
     margin-right: 5%;
     padding: 1%;
-    opacity: .9;
     }
     .tile_row {
     margin-top: 60px;

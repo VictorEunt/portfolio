@@ -9,17 +9,17 @@ $font-family-serif: 'Alfa Slab One', cursive;
 $body-bg: #f9f9f9;
 $text-color: #262626;
 $navbar-height: 60px;
-$navbar-default-bg: #262626;
-$navbar-default-link-color: #f1c40f;
-$navbar-default-link-active-bg: #262626;
-$navbar-default-link-active-color: #1abc9c;
-$navbar-default-link-hover-color: #f39c12;
-$navbar-default-border: #262626;
+$navbar-default-bg: #f9f9f9;
+$navbar-default-link-color: #1abc9c;
+$navbar-default-link-active-bg: #f9f9f9;
+$navbar-default-link-active-color: #34495e;
+$navbar-default-link-hover-color: #bdc3c7;
+$navbar-default-border: #f9f9f9;
+$navbar-default-toggle-border-color: #f9f9f9;
 $navbar-default-toggle-hover-bg: none;
 $brand-primary: #f9f9f9;
 $jumbotron-heading-font-size: 300%;
 $jumbotron-padding: 2%;
-$navbar-default-toggle-border-color: #262626;
 $component-active-color: #f9f9f9;
 $page-header-border-color: none;
 $input-bg: #f9f9f9;
@@ -62,8 +62,12 @@ $panel-inner-border: #f9f9f9;
   margin: 6px 0 0 2%;
   float: left;
 }
+.navbar-default
+{
+border-bottom: 2px solid #34495e;
+}
 .navbar-default .navbar-toggle .icon-bar {
-	background-color: #f1c40f;
+	background-color: #34495e;
 	height: 5px;
 	margin-bottom: 5px;
 }
@@ -77,7 +81,8 @@ $panel-inner-border: #f9f9f9;
 }
 #resume-link {
 	font-family: 'Bitter', serif;
-	color: #f1c40f;
+  font-weight: bold;
+	color: #34495e;
 }
 #resume-link:hover {
 	text-decoration:none;
@@ -99,6 +104,7 @@ $panel-inner-border: #f9f9f9;
   font-family: 'Bitter', serif;
   font-size: 18px;
   font-weight: normal;
+  font-weight: bold;
 }
 
 .icon-custom {
@@ -192,6 +198,9 @@ h4 {
   }
   .nav_link {
 	 margin-bottom: 2px;
+  }
+  p {
+    font-size: 18px;
   }
 	h2 {
 		font-size: 36px;
