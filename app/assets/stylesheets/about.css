@@ -1,7 +1,7 @@
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */  
 
-.page-header {
+.about_header {
 		background-image: url("card_sort_group_2.png");
     background-size: cover;
     padding: 2% 2% 2% 6%;

@@ -39,12 +39,17 @@
   .form_row {
   height: 868px;
   }
+  #contact_form {
+  margin-left: 5%; 
+  }
 }
 
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  
+  #contact_form {
+  margin-left: 0%; 
+  }
 }
 
 

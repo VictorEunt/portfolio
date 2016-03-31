@@ -1,56 +1,40 @@
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
-.jumbotron {
-  background-image: url("seattle_dusk.png");
+.page-header {
+  background-image: url("seattle_dusk_crop.png");
   background-size: cover;
-  height: 450px;
-  margin: 5% 2% 10% 2%;
+  height: 175px;
 }
 #jhead {
-  margin-top: 150px;
-  margin-left: 0%;
+  background: #ecf0f1;
   color: #2c3e50;
-  font-size: 38px;
+  font-size: 32px;
   font-weight: bold;
-  background: #f9f9f9;
   padding: 2%;
+  margin: 20px 2% 2% 2%;
 }
-#jpara {
-  margin-top: 7%;
-  margin-left: 0%; 
-  background: #f9f9f9;
-  padding: 3%;
-  color: #2c3e50;
-  font-weight: bold;
+#jpara { 
+  background: #1abc9c;
+  color: #ecf0f1;
+  padding: 2%;
+  margin: 10px 2% 2% 2%;
+}
+.project_row{
+margin-bottom: 5%;
+}
+.project_tile{
+  text-align: center;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+.project_name{
+  color: #666666;
 }
 .tile_row {
-	margin-top: 10%;
-	margin-bottom: 5%;
-}
-.skill_tile {
-  margin-left: 8%;
-  margin-right: 8%;
-  margin-bottom: 5%;
-	height: 100%;
-	padding: 4% 6% 4% 6%;
-}
-#tile_1 {
-	background: #34495e;
-}
-#tile_2 {
-	background: #1abc9c;
-}
-#tile_3 {
-	background: #95a5a6;
-}
-.tile_head{
- color: #f9f9f9;
-}
-.tile_subhead {
-	color: #f9f9f9;
-	margin-top: -9px;
+  display: none;
 }
 .skill_row {
+  padding-bottom: 5%;
 	margin-bottom: 10%;
   background-color: #ecf0f1;
   height: 100%;
@@ -63,12 +47,16 @@
   background-color: #ecf0f1;
   height: 100%;
 }
+
 #skill_title{
   text-align: center;
-  padding-top: 15px;
-  padding-left: 2%;
-  padding-right: 2%;
-  margin-bottom: 40px;
+}
+#project_title{
+  text-align: center;
+}
+.skill_tile{
+  margin-left: 15%;
+  margin-right: 15%;  
 }
 .skill_subhead{
   color: #666666;
@@ -83,12 +71,38 @@
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-#skill_title{
-  padding-top: 15px;
-  margin-bottom: 40px;
+  .page-header {
+    height: 275px;  
+  }
+  #jhead {
+    width: 48%;
+    padding: 1%;
+    margin: 20px 2% 2% 47%;
+    font-size: 38px;
+  }
+  #jpara { 
+    width: 48%;
+    padding: 1%;
+    margin: 20px 2% 2% 47%;
+    font-size: 20px;
+  }
+  .skill_tile{
+    margin-left: 25%;
+    margin-right: 15%;  
 }
-
-
+  .project_row{
+    margin-bottom: 2%;
+  }
+  #project_title{
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .project_name{
+    font-size: 20px;
+  }
+  #skill_title{
+    margin-bottom: 40px;
+  }
   .skill_head{
     padding-top: 15%;
   }
@@ -97,32 +111,76 @@
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
+  .page-header {
+  background-image: url("seattle_dusk.png");
+  }
 	
 }
 
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    .jumbotron {
-    margin: 40px 2% 80px 2%;
+    .page-header {
+    height: 300px;
+    }
+    .tile_row {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5%;
     }
     #jhead {
-    margin-top: 9%;
-    margin-left: 0%;
-    margin-right: 5%;
-    font-size: 76px;
-    padding: 1%;
+      width: 57%;
+      padding: 1%;
+      margin: 20px 2% 2% 40%;
+      font-size: 48px;
     }
-    #jpara {
-    font-size: 30px;
-    margin-top: 2%;
-    margin-left: 0%; 
-    margin-right: 5%;
-    padding: 1%;
+    #jpara { 
+      width: 57%;
+      padding: 1%;
+      margin: 20px 2% 2% 40%;
+      font-size: 32px;
+    }
+    .project_row{
+    margin-bottom: 5%;
+    }
+    .project_tile{
+    text-align: center;
+    margin-left: 35px;
     }
     .tile_row {
     margin-top: 60px;
-    margin-bottom: 40px;
-  }
+    margin-bottom: 40
+    }
+    #tile_1 {
+      background: #1abc9c;
+      margin-left: 10px;
+      margin-right: 5px;
+      margin-bottom: 15px;
+      height: 100%;
+      padding: 100px 3% 2% 5%;
+    }
+    #tile_2 {
+      background: #34495e;
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-bottom: 15px;
+      height: 100%;
+      padding: 100px 3% 2% 5%;
+    }
+    #tile_3 {
+      background: #95a5a6;
+      margin-left: 5px;
+      margin-right: 10px;
+      margin-bottom: 15px;
+      height: 100%;
+      padding: 100px 3% 2% 5%;
+    }
+    .tile_head{
+     margin-top: -2px;
+     color: #f9f9f9;
+    }
+    .tile_subhead {
+      color: #f9f9f9;
+      margin-top: -9px;
+    }
 }

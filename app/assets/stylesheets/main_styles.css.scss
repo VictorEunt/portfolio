@@ -13,7 +13,7 @@ $navbar-default-bg: #f9f9f9;
 $navbar-default-link-color: #1abc9c;
 $navbar-default-link-active-bg: #f9f9f9;
 $navbar-default-link-active-color: #34495e;
-$navbar-default-link-hover-color: #bdc3c7;
+$navbar-default-link-hover-color: #34495e;
 $navbar-default-border: #f9f9f9;
 $navbar-default-toggle-border-color: #f9f9f9;
 $navbar-default-toggle-hover-bg: none;
@@ -64,7 +64,7 @@ $panel-inner-border: #f9f9f9;
 }
 .navbar-default
 {
-border-bottom: 2px solid #34495e;
+border-bottom: 1px solid #34495e;
 }
 .navbar-default .navbar-toggle .icon-bar {
 	background-color: #34495e;
@@ -106,9 +106,12 @@ border-bottom: 2px solid #34495e;
   font-weight: normal;
   font-weight: bold;
 }
-
-.icon-custom {
-  display: hide;
+.page-header {
+  margin: 0px 5px 5px 5px;
+  padding-top: 2%;
+  padding-right: 2%;
+  padding-bottom: 5%;
+  padding-left: 2%;
 }
 h1 {
 	font-size: 38px;
