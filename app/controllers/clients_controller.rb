@@ -16,26 +16,19 @@ class ClientsController < ApplicationController
   def new
     @client = Client.new
   end
-
   # GET /clients/1/edit
   def edit
   end
 
   # POST /clients
   # POST /clients.json
+
   def create
     @client = Client.new(client_params)
-
-    respond_to do |format|
-      if @client.save
-        format.html { redirect_to @client, notice: 'Client was successfully created.' }
-        format.json { render :show, status: :created, location: @client }
-      else
-        format.html { render :new }
-        format.json { render json: @client.errors, status: :unprocessable_entity }
-      end
-    end
+    @client.save
+    redirect_to root_path, notice: 'Thank you for your message and look our for my reply.'
   end
+
 
   # PATCH/PUT /clients/1
   # PATCH/PUT /clients/1.json
