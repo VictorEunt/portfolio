@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
   resources :clients
 
-  resources :friends
-
   root "pages#home"
   get "about" => "pages#about"
+  get "projects" => "pages#projects"
   get "contact" => "clients#new"
 
   # The priority is based upon order of creation: first created -> highest priority.

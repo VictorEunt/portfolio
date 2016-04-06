@@ -3,8 +3,8 @@ class PagesController < ApplicationController
   end
   def about
   end
-  def contact
+  def projects
   end
-  def friends
+  def contact
   end
 end

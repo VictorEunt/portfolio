@@ -9,19 +9,16 @@
 					<span class="icon-bar"></span>
     </button>
     <%= link_to image_tag("estrada_turq.png", :alt=>'estrada logo', :class=>'navbar-brand'), root_path %>
-		<p><%= link_to "Resume", 'estrada_resume.pdf', class: "navbar-text", id: "resume-link" %></p>
-		
+		<p><%= link_to "Resume", 'estrada_resume.pdf', class: "navbar-text", id: "resume-link" %></p>	
   </div>
   
 
-
-  
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse navbar-collapse">
     <ul class="active nav navbar-nav navbar-right">
       <li class="<%= active_class(root_path) %>" id="home_option"><%= link_to "Home", root_path, class: "nav_link" %></li>
       <li class="<%= active_class(about_path) %>"><%= link_to "About", about_path, class: "nav_link" %></li>
-      <li><%= link_to "Projects", root_path, class: "nav_link" %></li>
+      <li class="<%= active_class(projects_path) %>"><%= link_to "Projects", projects_path, class: "nav_link" %></li>
       <li><%= link_to "GitHub", 'https://github.com/VictorEunt', class: "nav_link" %></li>
       <li><%= link_to "Twitter", 'https://twitter.com/victoreUNT', class: "nav_link" %></li>
       <li class="<%= active_class(contact_path) %>"><%= link_to "Contact", contact_path, class: "nav_link" %></li>

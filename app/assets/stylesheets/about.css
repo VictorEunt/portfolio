@@ -6,8 +6,8 @@
     background-size: cover;
     padding: 2% 2% 2% 6%;
     opacity: .8;
+    margin-bottom: 10%;
   }
-
   #about {
     color: #f9f9f9;
   }
@@ -215,8 +215,9 @@
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-		.page-header {
-		}
+		.about_header {
+		margin-bottom: 0%;
+    }
 		#user_testing_photo {
 		display: none;
 		}

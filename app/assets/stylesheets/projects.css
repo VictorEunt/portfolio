@@ -1,0 +1,112 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */  
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .project_h1 {
+    color: #34495e;
+  }
+  
+  
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .project_h1{
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .project_row {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  .project_tile {
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    height: 200px;
+    padding: 6% 5% 2% 5%;
+    border-radius: 2px;
+  }
+  #ux_tile_1 {
+    background: #34495e;
+  }
+  #ux_tile_2 {
+    background: #95a5a6;
+  }
+  #ux_tile_3 {
+    background: #1abc9c;
+  }
+  .project_head{
+   margin-top: -2px;
+   color: #f9f9f9;
+   font-size: 30px;
+  }
+  .project_subhead {
+    color: #f9f9f9;
+    margin-top: -9px;
+    font-size: 20px;
+  }
+  .role_box {
+    margin-left: 20px;
+  }
+  li {
+    font-size: 18px;
+  }
+  .description {
+    margin-right: 20%;
+  }  
+  
+  
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .project_h1{
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .project_row {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  .project_tile {
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    height: 200px;
+    padding: 6% 5% 2% 5%;
+    border-radius: 2px;
+  }
+  #ux_tile_1 {
+    background: #34495e;
+  }
+  #ux_tile_2 {
+    background: #95a5a6;
+  }
+  #ux_tile_3 {
+    background: #1abc9c;
+  }
+  .project_head{
+   margin-top: -2px;
+   color: #f9f9f9;
+   font-size: 30px;
+  }
+  .project_subhead {
+    color: #f9f9f9;
+    margin-top: -9px;
+    font-size: 20px;
+  }
+  .role_box {
+    margin-left: 20px;
+  }
+  li {
+    font-size: 18px;
+  }
+  .description {
+    margin-right: 20%;
+  }
+}

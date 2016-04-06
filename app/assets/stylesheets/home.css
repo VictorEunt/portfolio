@@ -19,10 +19,10 @@
   padding: 2%;
   margin: 10px 2% 2% 2%;
 }
-.project_row{
+#home_project_row {
 margin-bottom: 5%;
 }
-.project_tile{
+#project_box{
   text-align: center;
   margin-left: 35px;
   margin-right: 35px;
@@ -90,7 +90,7 @@ margin-bottom: 5%;
     margin-left: 25%;
     margin-right: 15%;  
 }
-  .project_row{
+  #home_project_row {
     margin-bottom: 2%;
   }
   #project_title{
@@ -140,12 +140,8 @@ margin-bottom: 5%;
       margin: 20px 2% 2% 40%;
       font-size: 32px;
     }
-    .project_row{
+    #home_project_row{
     margin-bottom: 5%;
-    }
-    .project_tile{
-    text-align: center;
-    margin-left: 35px;
     }
     .tile_row {
     margin-top: 60px;
