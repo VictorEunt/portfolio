@@ -26,7 +26,7 @@ class ClientsController < ApplicationController
   def create
     @client = Client.new(client_params)
     @client.save
-    redirect_to root_path, notice: 'Thank you for your message and look our for my reply.'
+    redirect_to contact_url, notice: 'Thank you for your message and look our for my reply.'
   end
 
 

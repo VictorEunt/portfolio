@@ -1,14 +1,27 @@
 <div class="row form_row">
   <div class="col-sm-8 col-md-8 col-lg-6 col-lg-offset-1">
     <div id="contact_form">
+      <% if @client.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@client.errors.count, "error") %> prohibited this pin from being saved:</h2>
+        <ul>
+          <% @client.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+      <% end %>
+      <% if flash[:notice] %>
+        <div class="alert alert-info" role="alert">
+          <p>Thank you for your message. I will reply by the next day.</p>
+      <% end %>
+      </div>
       <div id="contact_heading">
         <h2>Let's get in touch</h2><h4>and talk about UX in the Seattle area.</h4>
       </div>
       <div class="panel panel-default">
         <div class="panel-body">
-
           <%= form_for(@client) do |f| %>
-
           <div class="form-group">
             <h5 class="contact_label"><%= f.label :name %></h5>
             <%= f.text_field :name, class: "form-control input-lg" %>
