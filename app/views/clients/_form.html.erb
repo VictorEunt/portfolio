@@ -1,4 +1,4 @@
-<div class="row form_row">
+<div class="row">
   <div class="col-sm-8 col-md-8 col-lg-6 col-lg-offset-1">
     <div id="contact_form">
       <% if @client.errors.any? %>
@@ -16,46 +16,52 @@
           <p>Thank you for your message. I will reply by the next day.</p>
       <% end %>
       </div>
-      <div id="contact_heading">
-        <h2>Let's get in touch</h2><h4>and talk about UX in the Seattle area.</h4>
-      </div>
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <%= form_for(@client) do |f| %>
-          <div class="form-group">
-            <h5 class="contact_label"><%= f.label :name %></h5>
-            <%= f.text_field :name, class: "form-control input-lg" %>
-          </div>
-          <div class="form-group">
-            <h5 class="contact_label"><%= f.label :email %></h5>
-            <%= f.text_field :email, class: "form-control input-lg" %>
-          </div>
-          <div class="form-group">
-            <h5 class="contact_label"><%= f.label :subject %></h5>
-            <%= f.text_field :subject, class: "form-control input-lg" %>
-          </div>
-          <div class="form-group">
-            <h5 class="contact_label"><%= f.label :message %></h5>
-            <%= f.text_area :message, class: "form-control input-lg" %>
-          </div>
-          <div class="form-group">
-            <%= f.submit "Send", class: "btn btn-primary btn-lg", id: "contact_send" %>
-          </div>
-          </div>
-
-          <% end %>
-      </div>
     </div>
   </div>
-	<div class="col-sm-4 col-md-4 col-lg-3">
-		<div id="contact_panel">
-			<h3>Connect With Me</h3><br/>
-      <h5>Email</h5><p><%= mail_to "victorestrada@my.unt.edu", "VictorEstrada@my.unt.edu", :class=>"connect_link" %></p>
-			<h5>Twitter</h5><p><%= link_to "twitter.com/victoreUNT", "https://twitter.com/victoreUNT", :class=>"connect_link" %></p>
-			<h5>Mobile</h5><p>415-715-9039</p>
-			<div><%= link_to "Victor's Resume", "estrada_resume.pdf", class: "btn btn-primary btn-lg", id: "download_resume" %></div>
-		</div>
-	</div>
+</div>
+  <div class="row form_row">
+    <div class="col-sm-8 col-md-8 col-lg-6 col-lg-offset-1">
+      <div id="contact_form">
+        <div id="contact_heading">
+          <h2>Let's get in touch</h2><h4>and talk about UX in the Seattle area.</h4>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <%= form_for(@client) do |f| %>
+            <div class="form-group">
+              <h5 class="contact_label"><%= f.label :name %></h5>
+              <%= f.text_field :name, class: "form-control input-lg" %>
+            </div>
+            <div class="form-group">
+              <h5 class="contact_label"><%= f.label :email %></h5>
+              <%= f.text_field :email, class: "form-control input-lg" %>
+            </div>
+            <div class="form-group">
+              <h5 class="contact_label"><%= f.label :subject %></h5>
+              <%= f.text_field :subject, class: "form-control input-lg" %>
+            </div>
+            <div class="form-group">
+              <h5 class="contact_label"><%= f.label :message %></h5>
+              <%= f.text_area :message, class: "form-control input-lg" %>
+            </div>
+            <div class="form-group">
+              <%= f.submit "Send", class: "btn btn-primary btn-lg", id: "contact_send" %>
+            </div>
+            </div>
+
+            <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-3">
+      <div id="contact_panel">
+        <h3>Connect With Me</h3><br/>
+        <h5>Email</h5><p><%= mail_to "victorestrada@my.unt.edu", "VictorEstrada@my.unt.edu", :class=>"connect_link" %></p>
+        <h5>Twitter</h5><p><%= link_to "twitter.com/victoreUNT", "https://twitter.com/victoreUNT", :class=>"connect_link" %></p>
+        <h5>Mobile</h5><p>415-715-9039</p>
+        <div><%= link_to "Victor's Resume", "estrada_resume.pdf", class: "btn btn-primary btn-lg", id: "download_resume" %></div>
+      </div>
+    </div>
 </div>
 
 
