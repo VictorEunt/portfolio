@@ -1,105 +1,153 @@
-<div class="container-fluid">
-  <div class="page-header">
-    <h1 id="jhead">UX Writer</h1>
-    <p id="jpara">Victor loves people, testing content, and developing for the user.</p>
-  </div> 
-  <div class="row" id="home_project_row">
-    <div class="col-xs-12">
-      <h3 id="project_title">Recent Projects</h3>
-      <div id="project_box">
-        <h6 class="project_name">UX Research for the Division of Student Affairs</h6>
-        <h6 class="project_name">Corpus Database for Academic Technical Documents, TechCorp</h6>
-        <h6 class="project_name">XML Documentation and Design for Information Systems Proposal</h6>
+<div id="home-page-header">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <h1>Technical<br><span id="communicator">Communicator</span><br><small>UX Writer/ Developer</small></h1>
       </div>
-      </div>
-  </div>
-  <div class="row tile_row">
-    <div class="col-xs-12 col-sm-4 col-md-4">
-      <div id="tile_1">
-        <h2 class="tile_head">Authors</h2>
-        <h3 class="tile_subhead">topic-based content</h3>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-4 col-md-4">
-      <div id="tile_2">
-					<h2 class="tile_head">Develops</h2>
-					<h3 class="tile_subhead">with UX practices</h3>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-4 col-md-4">
-      <div id="tile_3">
-        <h2 class="tile_head">Designs</h2>
-        <h3 class="tile_subhead">user-centered design</h3>
+      <div id="header-blurb" class="col-xs-12 col-sm-5">
+        <p>Victor loves editing content, writing code, and developing for the end-user.</p>
       </div>
     </div>
   </div>
+</div> 
 
-  <div class="row">
-    <div class="col-xs-12">
-      <h2 id="skill_title">What I Carry in My UX Briefcase</h2>
-    </div>
-  </div>
-  <div class="row skill_row">
-    <div class="col-xs-6 col-sm-4 col-sm-offset-0 col-sm-offset-2 col-md-3 col-md-offset-0 col-lg-3">
-      <div class="skill_tile">
-        <h4 class="skill_head">Usability</h4><br/>
-        <h6 class="skill_subhead">Card Sorts</h6>
-        <h6 class="skill_subhead">Scenarios</h6>
-        <h6 class="skill_subhead">Personas</h6>
-        <h6 class="skill_subhead">User Journey</h6>
-        <h6 class="skill_subhead">Heuristic Evaluations</h6>
-        <h6 class="skill_subhead">Correlation Analysis</h6>
-        <h6 class="skill_subhead">Affinity Diagramming</h6>
-        <h6 class="skill_subhead">Qualitative Surveys</h6>
-        <h6 class="skill_subhead">Quantitative Surveys</h6>
+  <div id="home-styles">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>Recent Projects</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-0">
+          <div class="project-thumbnail-container">
+            <div id="hover-effect">
+              <div class="thumbnail">
+                 <%= link_to image_tag('DBC.png'), projects_path %>
+                  <div class="caption">
+                    <h3>An Information Systems Proposal</h3>
+                    <p>With a team of business students, I led the project management, database design, copyediting, and the production of deliverables in a proposal following the Systems Development Life Cycle (SDLC).</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-0">
+          <div class="project-thumbnail-container">
+            <div id="hover-effect">
+              <div class="thumbnail">
+                 <%= link_to image_tag('dita-code.png'), projects_path %>
+                  <div class="caption">
+                    <h3>DITA documentation for Microsoft Word</h3>
+                    <p>Highlighting the modularity of DITA, I wrote procedures for Track Changes and coded them as DITA tasks, concepts, and references to build both XHTML and PDF documentation.</p><br>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-0">
+          <div class="project-thumbnail-container">
+            <div id="hover-effect">
+              <div class="thumbnail">
+                 <%= link_to image_tag('techcorp-home.png'), projects_path %>
+                  <div class="caption">
+                    <h3>RESTful App for Academic Database, TechCorp</h3>
+                    <p>After designing the objects and classes for a Postgres database, I programmed with embedded Ruby an interface to upload and store a corpus of technical documents via Amazon Web Services.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="col-xs-6 col-sm-4 col-sm-offset-0 col-md-3 col-lg-3">
-      <div class="skill_tile">
-        <h4 class="skill_head">Design</h4><br/>
-        <h6 class="skill_subhead">Print Design</h6>
-        <h6 class="skill_subhead">Copyediting</h6>
-        <h6 class="skill_subhead">Web Design</h6>
-        <h6 class="skill_subhead">Mobile Design</h6>
-        <h6 class="skill_subhead">Wireframes</h6>
-        <h6 class="skill_subhead">Database<br/>Design</h6>
-        <h6 class="skill_subhead">Information Architecture</h6>
-        <h6 class="skill_subhead">Content Diagramming</h6>
-        <h6 class="skill_subhead">Object-Relationship Modeling</h6>
-      </div>
-    </div>
-
-    <div class="col-xs-6 col-sm-4 col-sm-offset-0 col-sm-offset-2 col-md-3 col-md-offset-0 col-lg-3">
-      <div class="skill_tile">
-        <h4 class="skill_head">Coding</h4><br/>
-        <h6 class="skill_subhead">Command-line</h6>
-        <h6 class="skill_subhead">Ruby on Rails</h6> 
-        <h6 class="skill_subhead">PHP</h6>
-        <h6 class="skill_subhead">Javascript</h6>        
-        <h6 class="skill_subhead">HTML5/CSS3</h6>
-        <h6 class="skill_subhead">Bootstrap</h6>
-        <h6 class="skill_subhead">XML</h6>
-        <h6 class="skill_subhead">DITA</h6>
-        <h6 class="skill_subhead">Markdown</h6><br/>
-      </div>
-
-    </div>
-    <div class="col-xs-6 col-sm-4 col-sm-offset-0 col-md-3 col-md-offset-0 col-lg-3">
-      <div class="skill_tile">
-        <h4 class="skill_head">Software</h4><br/>
-        <h6 class="skill_subhead">InDesign</h6>
-        <h6 class="skill_subhead">Illustrator</h6>
-        <h6 class="skill_subhead">Photoshop</h6>
-        <h6 class="skill_subhead">Dreamweaver</h6>
-        <h6 class="skill_subhead">Brackets</h6>
-        <h6 class="skill_subhead">Git</h6>
-        <h6 class="skill_subhead">Microsoft Office</h6>
-        <h6 class="skill_subhead">Visio</h6>
-        <h6 class="skill_subhead">Drupal</h6>
-      </div>
-    </div>
-  </div>
-  <div class="row"></br>
-  </div>
 </div>
 
+<div id="endeavor-heading">
+    <div class="container-fluid">
+      <h2>My Endeavors</h2>
+    </div>
+</div>
+
+  <div id="endeavor">
+    <div class="container-fluid">
+    </div>
+  </div>
+
+  <div id="endeavor-skills">
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            <div id="first-well">
+              <div class="well well-lg">
+                <p>Immersed in a rigorous, cutting-edge Master's program for Technical Communication, I have developed business skills for the 21st Century:</p>
+                <ul>
+                  <li><p>Project management in the global workplace,</p></li>
+                  <li><p>Technical documentation for all audiences,</p></li>
+                  <li><p>Editing with enterprise content management systems, and</p></li>
+                  <li><p>User-centered web development.</p></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="even-well">
+            <div class="well well-lg">
+              <h2>Technical Editing and Documentation</h2>
+              <p>Practiced in the project management of technical editing and copyediting for global audiences, I have applied these principles in developing procedures and documentation with DITA and have used Adobe CC to produce professional quality deliverables.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12">
+          <div class="odd-well">
+            <div class="well well-lg">
+              <h2>RESTful Programming and Development</h2>
+              <p>I have practiced RESTful Programming and Development with the MVC framework Ruby on Rails. By conducting user research, architecting databases, and designing and programming user interfaces with an iterative process, I have first-hand experience working with the Scrum framework.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12">
+          <div class="even-well">
+            <div class="well well-lg">
+              <h2>Usability and Web Development</h2>
+              <p>With companies including the American Heart Association, I have conducted data-centered enterprise usabilty testing with a focus on creating high-quality deliverables tailored to a variety of audiences. My usability and web projects both reflect a user-centered approach paired with a strong understanding of Typography, Print, and Web Design.</p>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+
+  <div id="logo-styles">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12">
+          <h2>The Briefcase</h2>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <%= image_tag('dita-logo.png') %>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <%= image_tag('rails.png') %>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <%= image_tag('aws-logo.png') %>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <%= image_tag('userzoom.png') %>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <%= image_tag('drupal.png') %>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <%= image_tag('slack-logo.png') %>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+          <%= image_tag('adobe-logo.png') %>
+        </div>
+      </div>
+    </div>
+  </div>
