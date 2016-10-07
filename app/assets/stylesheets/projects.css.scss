@@ -1,16 +1,30 @@
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */  
-.project_page {
-  padding: 2%;
+
+.dbc-container {
+  padding: 5% 15px;
+  background-color: rgba(241, 196, 15,.4);
 }
 
+.dita-container {
+  margin-top: 5%;
+  padding: 5% 15px;
+  background-color: rgba(230,230,230,.6);
+}
+
+.role-section {
+  margin-top: 15px;
+}
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media (min-width: 768px) { 
   .project_h1 {
     color: #34495e;
   }
   
+  .role-section {
+  margin-top: 25px;
+}
   
 }
 
