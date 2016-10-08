@@ -1,15 +1,67 @@
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */  
 
-.dbc-container {
-  padding: 5% 15px;
-  background-color: rgba(241, 196, 15,.4);
+.ruby-container {
+
+  padding: 5% 25px;
+  background-color: rgba(26, 188, 156,1.0);
+  
+  p {
+    color: #f9f9f9;
+  }
+  
+  h2 {
+    color: #fff;
+  }
+  
+  h5 {
+    color: #f9f9f9;
+  }
+  
+  li {
+    color: #f9f9f9;
+  }
 }
 
 .dita-container {
   margin-top: 5%;
-  padding: 5% 15px;
+  padding: 5% 25px;
   background-color: rgba(230,230,230,.6);
+  
+  h2 {
+    color: #3498db;
+  }
+  
+  p {
+    color: #666666;
+  }
+}
+
+.dbc-container {
+  margin-top: 5%;
+  padding: 5% 25px;
+}
+
+.beans-container {
+  margin-top: 5%;
+  padding: 5% 25px;
+  background-color: rgba(26,26,26,1.0);
+  
+  h2 {
+    color: #d41a27;
+  }
+  
+  h5 {
+    color: #e6e6e6;
+  }
+  
+  p {
+    color: #e6e6e6;
+  }
+  
+  li {
+    color: #e6e6e6;
+  }
 }
 
 .role-section {
