@@ -32,8 +32,16 @@
     color: #3498db;
   }
   
+  h5 {
+    color: #4d4d4d;
+  }
+  
   p {
-    color: #666666;
+    color: #4d4d4d;
+  }
+  
+  li {
+    color: #4d4d4d;
   }
 }
 
@@ -49,10 +57,17 @@
   
   h2 {
     color: #d41a27;
+    margin-top:0;
   }
   
   h5 {
     color: #e6e6e6;
+  }
+  
+  h6 {
+    color: #f1c40f;
+    margin-top: 25px;
+    margin-bottom: 0;
   }
   
   p {
