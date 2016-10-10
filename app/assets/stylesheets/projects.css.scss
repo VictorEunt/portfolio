@@ -24,7 +24,6 @@
 }
 
 .dita-container {
-  margin-top: 5%;
   padding: 5% 25px;
   background-color: rgba(230,230,230,.6);
   
@@ -46,12 +45,10 @@
 }
 
 .dbc-container {
-  margin-top: 5%;
   padding: 5% 25px;
 }
 
 .beans-container {
-  margin-top: 5%;
   padding: 5% 25px;
   background-color: rgba(26,26,26,1.0);
   
@@ -83,11 +80,17 @@
   margin-top: 15px;
 }
 
+.projects-heading {
+  color: #34495e;
+}
+
+.project_h1 {
+  color: #34495e;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-  .project_h1 {
-    color: #34495e;
-  }
+
   
   .role-section {
   margin-top: 25px;
