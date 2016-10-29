@@ -136,6 +136,11 @@
 
 	/* Small devices (tablets, 768px and up) */
 	@media (min-width: 768px) {
+    .page-header-default {
+      padding-left: 45px;
+      padding-right: 45px;
+    }
+    
 	  #user_testing_photo {
     margin-top: 5%;
   	}
@@ -185,7 +190,7 @@
     margin-top: 0%;
 		margin-bottom: 5%;
     padding: 5% 8% 8% 8%;
-    height: 375px;
+    height: 450px;
     }
     .recommend_row{
       margin-bottom: 10%;
@@ -194,23 +199,32 @@
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  
+    .about_header {
+    margin-bottom: 0%;
+    }
+  
     #user_testing_photo {
     display: none;
-  }
+    }
+  
 		#about_box_1 {
      margin-top: 5%;
      font-size: 18px;    
 		}
+  
 		#about_box_2 {
      margin-top: 5%;
      font-size: 18px;
 		}
+  
     .recommend_box{
     margin-top: 0%;
 		margin-bottom: 5%;
     padding: 5% 8% 8% 8%;
-    height: 550px;
+    height: 450px;
     }
+  
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -229,7 +243,7 @@
 		}
 		.recommend_box {
 			width: 95%;
-			height: 545px;
+			height: 645px;
 			margin-left: 2%;
 			margin-bottom: 15%;
 			padding: 10%;
