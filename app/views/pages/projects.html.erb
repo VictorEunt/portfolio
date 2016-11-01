@@ -3,7 +3,7 @@
 <div class="container-fluid ruby-project" id="ruby-link">
   <div class="row">
     <div class="col-sm-12 col-md-5 col-lg-4 col-lg-offset-1">
-      <%= image_tag('techcorp-home.png', :class=>'img-responsive') %>
+      <%= link_to (image_tag ('techcorp-home.png'), class: 'img-responsive'), techcorp_path %>
     </div>
     <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 col-lg-5">
       <h2>Developing an Online Database and Interface</h2>
@@ -39,8 +39,11 @@
       <div>
         <h5>Technical Communication</h5>
         <p>So that users could login and upload their technical documents, I took advantage of RESTful services such as Devise and Amazon Web Services&mdash;two popular services built for a Model, View, and Controller (MVC) framework such as Ruby on Rails.</p>
-        <p>For the user interface, I adopted an iterative process to test and discover the best choices for searching documents.</p>        
+        <p>For the user interface, I adopted an iterative process to test and discover the best choices for searching documents.</p>  
       </div>
+    </div>
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+      <%= link_to 'Project Details', techcorp_path, class: "btn btn-default btn-lg btn-block" %><br>
     </div>
   </div>
 </div>

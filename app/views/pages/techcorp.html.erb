@@ -1,0 +1,235 @@
+<div class="container-fluid tc-header">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
+      <h1 class="text-center">techCorp: Developing an Online Database and Interface</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid tc-subheader">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
+      <h6 class="text-center">The Audience Analysis: Understanding the Client's Needs</h6>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid tc-project">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1 col-md-5 col-lg-4 col-lg-offset-1">
+      <div class="thumbnail">
+        <%= image_tag('tech-doc.png', :class=>'img-responsive') %>
+        <div class="caption">
+          <h5>Technical Document</h5>
+          <p>A student's technical document featured in techCorp's Amazon Simple Storage Service (S3).</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 col-lg-6">
+      <h3>Audience-Analysis</h3>
+      <h6>The Clients and End-users</h6>
+      <p>My goal was to learn about the needs of the clients of techCorp, a team of technical communication professors who wanted to develop an online corpus of technical documents produced by students. To ensure the database would meet the needs of the clients and users, I inquired about the following:</p>
+      <ul>
+        <li>How long will the system exist?</li>
+        <li>What type of data may develop over time?</li>
+        <li>What type of information will be entered?</li>
+        <li>What type of people will interact with the database?</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <div class="container-fluid conclusion-section">
+    <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6">
+      <h6>The Analysis</h6>
+      <p>I learned the professors had collected over 600 documents and stored descriptions for each document in an Excel sheet. The data included characteristics about the student, professor, the class, and the document itself.</p>
+      <p>The users of the database would be students in higher education, researchers, and instructors. The group of users would be familiar with a research model similar to a library database. After choosing my tools, I would be ready to start the first iteration of the database.</p>
+      </div>
+    </div>
+  </div>
+  
+<div class="container-fluid tc-subheader">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
+      <h6 class="text-center">Designing and Developing the Database</h6>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid tc-project">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4">
+      <div class="thumbnail">
+        <%= image_tag('database-iteration1.png', :class=>'img-responsive') %>
+        <div class="caption">
+          <h5>Database Iteration One</h5>
+          <p>Using object-relational mapping, I created models from my client's data to better understand how the data would be used in a Model, View, and Controller framework (MVC).</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4">
+      <div class="thumbnail">
+        <%= image_tag('database-iteration2.png', :class=>'img-responsive') %>
+        <div class="caption">
+          <h5>Database Iteration Three</h5>
+          <p>Collaborating with techCorp clients, I realized the document object and its characteristics would remain constant and future metadata associations might be needed.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4">
+      <div class="thumbnail">
+        <%= image_tag('database-schema.png', :class=>'img-responsive') %>
+        <div class="caption">
+          <h5>Final Database Schema</h5>
+          <p>Working with a PostGreSQL database, the document object was created as the model, <strong>corpus_entry</strong>, which included characteristics of the student, professor, and class.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6">
+      <h3>Database Design</h3>
+      <h6>Choosing the Right Tools</h6>
+      <p>Using notepads, Visio, and object-relational mapping, I created a database schema that would operate quickly in a MVC framework. The database would offer flexibility for additional models and growth, an important need for the client.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid conclusion-section">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6">
+      <h6>The Final Database Schema</h6>
+      <p>Using Ruby on Rails, a web application framework, I began developing the back-end of techCorp using the reliable and secure Heroku Postgres database. Cloud storage was provided by the Amazon Simple Storage Service (S3).</p>
+      <p>After successful testing of the model and data with the CRUD process (create, read, update, and delete), further web development on the back and front-end could begin.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid tc-subheader">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
+      <h6 class="text-center">Web Development: Users and Uploads</h6>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid tc-project">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1">
+      <div class="thumbnail">
+        <%= image_tag('tc-sign-in.png', :class=>'img-responsive') %>
+        <div class="caption">
+          <h5>Creating Users - Iteration One</h5>
+          <p>Using the MVC authentication solution, Devise for Rails, the web application would allow users to sign up and upload a document.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-0">
+      <div class="thumbnail">
+        <%= image_tag('tc-share.png', :class=>'img-responsive') %>
+        <div class="caption">
+          <h5>Creating Users - Final Iteration</h5>
+          <p>With clear options and instructions, the sign-up page was given the name <strong>Share</strong>, a likeable word that fits the core theme of the corpus.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1">
+      <h3>Creating Users and Permissions</h3>
+      <h6>Choosing the Right Tools</h6>
+      <p>Using notepads, Visio, and object-relational mapping, I created a database schema that would operate quickly in a MVC framework. The database would offer flexibility for additional models and growth, an important need for the client.</p><br>
+    </div>
+    <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-0">
+      <h3>Uplading a Document</h3>
+      <h6>Choosing the Right Tools</h6>
+      <p>Using notepads, Visio, and object-relational mapping, I created a database schema that would operate quickly in a MVC framework. The database would offer flexibility for additional models and growth, an important need for the client.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1">
+      <div class="thumbnail">
+        <%= image_tag('form-mockup.png', :class=>'img-responsive') %>
+        <div class="caption">
+          <h5>Building the Form</h5>
+          <p>Understanding how best to organize and group the fields of the form, mockups and user-testing was conducted. Subjects included both students and techCorp clients.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-0">
+      <div class="thumbnail">
+        <%= image_tag('tc-form.png', :class=>'img-responsive') %>
+        <div class="caption">
+          <h5>A User-tested Design</h5>
+          <p>The Corpus Entry form was divided into three sections with the document upload positioned last, allowing the user to experience the data and document file as simultaneously saved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid conclusion-section">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6">
+      <h6>User-centered Web Development</h6>
+      <p>Using Ruby on Rails, a web application framework, I began developing the back-end of techCorp using the reliable and secure Heroku Postgres database. Cloud storage was provided by the Amazon Simple Storage Service (S3).</p>
+      <p>After successful testing of the model and data with the CRUD process (create, read, update, and delete), further web development on the back and front-end could begin.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid tc-subheader">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
+      <h6 class="text-center">Designing and Developing the User Interface</h6>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid tc-project">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4">
+      <div class="thumbnail">
+        <%= image_tag('database-iteration1.png', :class=>'img-responsive') %>
+        <div class="caption">
+          <h5>Interface Iteration One</h5>
+          <p>Using object-relational mapping, I created models from my client's data to better understand how the data would be used in a Model, View, and Controller framework (MVC).</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4">
+      <div class="thumbnail">
+        <%= image_tag('database-iteration2.png', :class=>'img-responsive') %>
+        <div class="caption">
+          <h5>Interface Iteration Four</h5>
+          <p>Collaborating with techCorp clients, I realized the document object and its characteristics would remain constant and future metadata associations might be needed.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4">
+      <div class="thumbnail">
+        <%= image_tag('database-schema.png', :class=>'img-responsive') %>
+        <div class="caption">
+          <h5>Final User Interface</h5>
+          <p>Working with a PostGreSQL database, the document object was created as the model, <strong>corpus_entry</strong>, which included characteristics of the student, professor, and class.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6">
+      <h3>User Interface Design</h3>
+      <h6>Choosing the Right Tools</h6>
+      <p>Using notepads, Visio, and object-relational mapping, I created a database schema that would operate quickly in a MVC framework. The database would offer flexibility for additional models and growth, an important need for the client.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid conclusion-section">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6">
+      <h6>The Final Prototype</h6>
+      <p>Using Ruby on Rails, a web application framework, I began developing the back-end of techCorp using the reliable and secure Heroku Postgres database. Cloud storage was provided by the Amazon Simple Storage Service (S3).</p>
+      <p>After successful testing of the model and data with the CRUD process (create, read, update, and delete), further web development on the back and front-end could begin.</p>
+    </div>
+  </div>
+</div>
