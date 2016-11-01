@@ -82,7 +82,7 @@
         <%= image_tag('database-schema.png', :class=>'img-responsive') %>
         <div class="caption">
           <h5>Final Database Schema</h5>
-          <p>Working with a PostGreSQL database, the document object was created as the model, <strong>corpus_entry</strong>, which included characteristics of the student, professor, and class.</p>
+          <p>Working with a PostgreSQL database, the document object was created as the model, <strong>corpus_entry</strong>, which included characteristics of the student, professor, and class.</p>
         </div>
       </div>
     </div>
@@ -91,7 +91,7 @@
     <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6">
       <h3>Database Design</h3>
       <h6>Choosing the Right Tools</h6>
-      <p>Using notepads, Visio, and object-relational mapping, I created a database schema that would operate quickly in a MVC framework. The database would offer flexibility for additional models and growth, an important need for the client.</p>
+      <p>Using notepads, Visio, and the method of object-relational mapping, I created a database schema that would operate quickly in a MVC framework. Essential to the client, the database would offer flexibility for additional models and growth.</p>
     </div>
   </div>
 </div>
@@ -134,15 +134,15 @@
         </div>
       </div>
     </div>
-    <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1">
+    <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1 web-copy">
       <h3>Creating Users and Permissions</h3>
-      <h6>Choosing the Right Tools</h6>
-      <p>Using notepads, Visio, and object-relational mapping, I created a database schema that would operate quickly in a MVC framework. The database would offer flexibility for additional models and growth, an important need for the client.</p><br>
+      <h6>A Database of Users</h6>
+      <p>Using the Devise authentication service, the web application prototype can register users, develop a contact list, and potentially reach out to researchers, professors, and students with incentives and updates.</p>
     </div>
-    <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-0">
-      <h3>Uplading a Document</h3>
-      <h6>Choosing the Right Tools</h6>
-      <p>Using notepads, Visio, and object-relational mapping, I created a database schema that would operate quickly in a MVC framework. The database would offer flexibility for additional models and growth, an important need for the client.</p>
+    <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-0 web-copy">
+      <h3>Uploading a Document</h3>
+      <h6>Interacting with Users</h6>
+      <p>I developed the form with the guidance of usability principles and user-feedback. Using think-aloud testing, participants helped guide the order and structure of the form fields. For instance, select options were used to help the user quickly and confidently make entries.</p>
     </div>
   </div>
   <div class="row">
@@ -151,7 +151,7 @@
         <%= image_tag('form-mockup.png', :class=>'img-responsive') %>
         <div class="caption">
           <h5>Building the Form</h5>
-          <p>Understanding how best to organize and group the fields of the form, mockups and user-testing was conducted. Subjects included both students and techCorp clients.</p>
+          <p>Understanding how best to organize and group the fields of the form, mockups and user-testing were both utilized. Participants included both students and techCorp clients.</p>
         </div>
       </div>
     </div>
@@ -160,7 +160,7 @@
         <%= image_tag('tc-form.png', :class=>'img-responsive') %>
         <div class="caption">
           <h5>A User-tested Design</h5>
-          <p>The Corpus Entry form was divided into three sections with the document upload positioned last, allowing the user to experience the data and document file as simultaneously saved.</p>
+          <p>The Corpus Entry form was divided into three sections with the upload document button positioned last, allowing the user to experience the data and document file as simultaneously saved.</p>
         </div>
       </div>
     </div>
@@ -171,8 +171,14 @@
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6">
       <h6>User-centered Web Development</h6>
-      <p>Using Ruby on Rails, a web application framework, I began developing the back-end of techCorp using the reliable and secure Heroku Postgres database. Cloud storage was provided by the Amazon Simple Storage Service (S3).</p>
-      <p>After successful testing of the model and data with the CRUD process (create, read, update, and delete), further web development on the back and front-end could begin.</p>
+      <p>With the needs of the client and user driving the development, the points of interaction with the end-user became the highest priorities, such as:</p>
+      <ul>
+        <li>Ease of use,</li>
+        <li>Confidence in the system,</li>
+        <li>A responsive design, and</li>
+        <li>User-friendly copy.</li>
+      </ul>
+      <p>The listed priorities were accomplished with both web technologies and user feedback. The MVC framework allowed for rapid uploads, Devise authentication created security for the user, Bootstrap structured a mobile-friendly responsive design, and user-feedback benefited the structure, organization, and experience of uploading a document to the corpus.</p>
     </div>
   </div>
 </div>
@@ -180,7 +186,7 @@
 <div class="container-fluid tc-subheader">
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
-      <h6 class="text-center">Designing and Developing the User Interface</h6>
+      <h6 class="text-center">Designing and Developing the Query Interface</h6>
     </div>
   </div>
 </div>
@@ -189,28 +195,28 @@
   <div class="row">
     <div class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4">
       <div class="thumbnail">
-        <%= image_tag('database-iteration1.png', :class=>'img-responsive') %>
+        <%= image_tag('ui-iteration-1.png', :class=>'img-responsive') %>
         <div class="caption">
           <h5>Interface Iteration One</h5>
-          <p>Using object-relational mapping, I created models from my client's data to better understand how the data would be used in a Model, View, and Controller framework (MVC).</p>
+          <p>In the mockup of the interface, the ability to easily search through a large corpus would be a guiding priority.</p>
         </div>
       </div>
     </div>
     <div class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4">
       <div class="thumbnail">
-        <%= image_tag('database-iteration2.png', :class=>'img-responsive') %>
+        <%= image_tag('tc-explorer.png', :class=>'img-responsive') %>
         <div class="caption">
           <h5>Interface Iteration Four</h5>
-          <p>Collaborating with techCorp clients, I realized the document object and its characteristics would remain constant and future metadata associations might be needed.</p>
+          <p>Collaborating with participants, the sidebar of categories and options was appreciated. The <strong>Genre</strong> option was moved to the top as participants most often used this option to query the corpus.</p>
         </div>
       </div>
     </div>
     <div class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4">
       <div class="thumbnail">
-        <%= image_tag('database-schema.png', :class=>'img-responsive') %>
+        <%= image_tag('corpus-select-options.png', :class=>'img-responsive') %>
         <div class="caption">
-          <h5>Final User Interface</h5>
-          <p>Working with a PostGreSQL database, the document object was created as the model, <strong>corpus_entry</strong>, which included characteristics of the student, professor, and class.</p>
+          <h5>Final UI Prototype</h5>
+          <p>In the final prototype, a tile format featured essential information and multiple links to the uploaded document.</p>
         </div>
       </div>
     </div>
@@ -218,8 +224,8 @@
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6">
       <h3>User Interface Design</h3>
-      <h6>Choosing the Right Tools</h6>
-      <p>Using notepads, Visio, and object-relational mapping, I created a database schema that would operate quickly in a MVC framework. The database would offer flexibility for additional models and growth, an important need for the client.</p>
+      <h6>Speed and the User Experience</h6>
+      <p>With modern web technologies and a lightweight design, queries could be performed as quick as under 2 seconds: a primary feature of the user experience. Combined with user-feedback, the user interface was developed and modeled into a familiar, intuitive, and reliable experience for users to access information.</p>
     </div>
   </div>
 </div>
@@ -228,8 +234,22 @@
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6">
       <h6>The Final Prototype</h6>
-      <p>Using Ruby on Rails, a web application framework, I began developing the back-end of techCorp using the reliable and secure Heroku Postgres database. Cloud storage was provided by the Amazon Simple Storage Service (S3).</p>
-      <p>After successful testing of the model and data with the CRUD process (create, read, update, and delete), further web development on the back and front-end could begin.</p>
+      <p>In a trio of services including Ruby on Rails, Heroku, and Amazon Web Services, I produced a lightweight web application that could store and query large masses of data, and with user-feedback and testing, I could ensure techCorp clients that the forms and queries would be reliable to the end-user.</p>
+      <p>In preparation for growth, the database schema and architecture was built to encompass large amounts of users, large amounts of data, and the ability to add and merge additional records and associations with the existing data.</p>
+      <p>Finally, additional pages were added to the corpus to build trust with the end-user. I included pages such as <strong>About</strong> and <strong>People</strong>, which told the story of the project and its future potential.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+        <div class="thumbnail">
+          <%= image_tag('tc-people.png', :class=>'img-responsive') %>
+          <div class="caption">
+            <h5>The People Page</h5>
+          </div>
+        </div>
     </div>
   </div>
 </div>
