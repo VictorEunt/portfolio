@@ -1,65 +1,69 @@
-<div class="container-fluid tc-header">
+<div class="container-fluid aha-header">
   <div class="row">
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
-      <h1 class="text-center">techCorp: Developing an Online Database and Interface</h1>
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+      <h1 class="text-center">American Heart Association:<br>A Usability Study</h1>
+      <h3 class="text-center">The Story of a Modern Medical Journalist</h3>
     </div>
   </div>
 </div>
 
-<div class="container-fluid tc-subheader">
+<div class="container-fluid aha-subheader">
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
-      <h6 class="text-center">The Audience Analysis: Understanding the Client's Needs</h6>
+      <h6 class="text-center">User Research: Getting to Know Medical Journalists</h6>
     </div>
   </div>
 </div>
 
-<div class="container-fluid tc-project">
+<div class="container-fluid aha-project">
   <div class="row">
     <div class="col-sm-10 col-sm-offset-1 col-md-5 col-lg-4 col-lg-offset-1">
       <div class="thumbnail">
-        <%= image_tag('tech-doc.png', :class=>'img-responsive') %>
+        <%= image_tag('aha-persona.png', :class=>'img-responsive') %>
         <div class="caption">
-          <h5>Technical Document</h5>
-          <p>A student's technical document featured in techCorp's Amazon Simple Storage Service (S3).</p>
+          <h5>Medical Journalist Persona, Russell</h5>
+          <p>1 of 2 data-based personas, Russell's goals and frustrations helped guide the usability testing. His data is a synthesis of 7 interviews of participants from the medical and journalism fields.</p>
         </div>
       </div>
     </div>
     <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 col-lg-6">
-      <h3>Audience-Analysis</h3>
-      <h6>The Clients and End-users</h6>
-      <p>My goal was to learn about the needs of the clients of techCorp, a team of technical communication professors who wanted to develop an online corpus of technical documents produced by students. To ensure the database would meet the needs of the clients and users, I inquired about the following:</p>
+      <h3>Interviews and Synthesis</h3>
+      <h6>Taking Notes at a Medical Conference: It's difficult if you can't find the room.</h6>
+      <p>The American Heart Association (AHA) maintains an intranet site for journalists covering the AHA conference, Scientific Sessions. With late-breaking news releases, media briefings, and tightly scheduled interviews, medical conferences can create time constraints for journalists. Quick access to resources is essential.
+      <p>With AHA requesting a review of the site, the 6 member usability team found participants from the medical and journalism fields to find out some answers, like:</p>
       <ul>
-        <li>How long will the system exist?</li>
-        <li>What type of data may develop over time?</li>
-        <li>What type of information will be entered?</li>
-        <li>What type of people will interact with the database?</li>
+        <li>What would they use an intranet site for?</li>
+        <li>Would they use it before, during, and after the conference?</li> 
+        <li>On what device?</li>
+        <li>How are they doing research and taking notes?</li>
+        <li>Are they having fun or is it stressful?</li>
       </ul>
+      <p>The responses and insights from the interviews were organized, analyzed, and synthesized into two personas.</p>
     </div>
   </div>
 </div>
 
-  <div class="container-fluid conclusion-section">
+  <div class="container-fluid aha-conclusions">
     <div class="row">
     <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6">
-      <h6>The Analysis</h6>
-      <p>I learned the professors had collected over 600 documents and stored descriptions for each document in an Excel sheet. The data included characteristics about the student, professor, the class, and the document itself.</p>
-      <p>The users of the database would be students in higher education, researchers, and instructors. The group of users would be familiar with a research model similar to a library database. After choosing my tools, I would be ready to start the first iteration of the database.</p>
+      <h6>The Tool of Data-Based Personas</h6>
+      <p>With User Research, I learned that covering a medical conference can make for a busy and challenging day for a journalist. By synthesizing the interview responses into personas with bios, goals, frustrations, and motiviations, I now had an impactful tool to inform and guide the heuristic evaluation, card sort, and scenario-based usability testing for the Scientific Sessions site.</p>
+      <p></p>
       </div>
     </div>
   </div>
   
-<div class="container-fluid tc-subheader">
+<div class="container-fluid aha-subheader">
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
-      <h6 class="text-center">Designing and Developing the Database</h6>
+      <h6 class="text-center">Planning a Card Sort: Information Archictecture and Thinking Like a Journalist</h6>
     </div>
   </div>
 </div>
 
-<div class="container-fluid tc-project">
+<div class="container-fluid aha-project">
   <div class="row">
-    <div class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4 database-image">
+    <div class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4">
       <div class="thumbnail">
         <%= image_tag('database-iteration1.png', :class=>'img-responsive') %>
         <div class="caption">
@@ -68,7 +72,7 @@
         </div>
       </div>
     </div>
-    <div class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4 database-image">
+    <div class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4">
       <div class="thumbnail">
         <%= image_tag('database-iteration2.png', :class=>'img-responsive') %>
         <div class="caption">
@@ -77,7 +81,7 @@
         </div>
       </div>
     </div>
-    <div class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4 database-image">
+    <div class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4">
       <div class="thumbnail">
         <%= image_tag('database-schema.png', :class=>'img-responsive') %>
         <div class="caption">
@@ -96,7 +100,7 @@
   </div>
 </div>
 
-<div class="container-fluid conclusion-section">
+<div class="container-fluid aha-conclusions">
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6">
       <h6>The Final Database Schema</h6>
@@ -106,7 +110,7 @@
   </div>
 </div>
 
-<div class="container-fluid tc-subheader">
+<div class="container-fluid aha-subheader">
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
       <h6 class="text-center">Web Development: Users and Uploads</h6>
@@ -114,7 +118,7 @@
   </div>
 </div>
 
-<div class="container-fluid tc-project">
+<div class="container-fluid aha-project">
   <div class="row">
     <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1">
       <div class="thumbnail">
@@ -146,7 +150,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1 form-image">
+    <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1">
       <div class="thumbnail">
         <%= image_tag('form-mockup.png', :class=>'img-responsive') %>
         <div class="caption">
@@ -155,7 +159,7 @@
         </div>
       </div>
     </div>
-    <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-0 form-image">
+    <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-0">
       <div class="thumbnail">
         <%= image_tag('tc-form.png', :class=>'img-responsive') %>
         <div class="caption">
@@ -167,7 +171,7 @@
   </div>
 </div>
 
-<div class="container-fluid conclusion-section">
+<div class="container-fluid aha-conclusions">
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6">
       <h6>User-centered Web Development</h6>
@@ -183,7 +187,7 @@
   </div>
 </div>
 
-<div class="container-fluid tc-subheader">
+<div class="container-fluid aha-subheader">
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
       <h6 class="text-center">Designing and Developing the Query Interface</h6>
@@ -191,32 +195,32 @@
   </div>
 </div>
 
-<div class="container-fluid tc-project">
+<div class="container-fluid aha-project">
   <div class="row">
-    <div class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4 interface">
+    <div class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4">
       <div class="thumbnail">
         <%= image_tag('ui-iteration-1.png', :class=>'img-responsive') %>
         <div class="caption">
           <h5>Interface Iteration One</h5>
-          <p>In the mockup of the interface, the ability to easily search through a large corpus would be a guiding priority.</p>
+          <p>In the mockup of the interface, the ability to easily search through a large corpus would be a guiding priority.</p><br>
         </div>
       </div>
     </div>
-    <div class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4 interface">
+    <div class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4">
       <div class="thumbnail">
         <%= image_tag('tc-explorer.png', :class=>'img-responsive') %>
         <div class="caption">
           <h5>Interface Iteration Four</h5>
-          <p>The <strong>Genre</strong> option was moved to the top as participants most often used this option to query the corpus.</p>
+          <p>Collaborating with participants, the sidebar of categories and options was appreciated. The <strong>Genre</strong> option was moved to the top as participants most often used this option to query the corpus.</p>
         </div>
       </div>
     </div>
-    <div class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4 interface">
+    <div class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4">
       <div class="thumbnail">
         <%= image_tag('corpus-select-options.png', :class=>'img-responsive') %>
         <div class="caption">
           <h5>Final UI Prototype</h5>
-          <p>In the final prototype, a tile format featured essential information and multiple links to the uploaded document.</p>
+          <p>In the final prototype, a tile format featured essential information and multiple links to the uploaded document.</p><br>
         </div>
       </div>
     </div>
@@ -230,7 +234,7 @@
   </div>
 </div>
 
-<div class="container-fluid conclusion-section">
+<div class="container-fluid aha-conclusions">
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6">
       <h6>The Final Prototype</h6>
@@ -241,14 +245,13 @@
   </div>
 </div>
 
-<div class="container-fluid tc-project">
+<div class="container-fluid">
   <div class="row">
-      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6">
+      <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
         <div class="thumbnail">
           <%= image_tag('tc-people.png', :class=>'img-responsive') %>
           <div class="caption">
             <h5>The People Page</h5>
-            <p>The menu option, <strong>People</strong>, became a tactic to build trust with the user and inform them of the scope and purpose of the corpus project.</p>
           </div>
         </div>
     </div>

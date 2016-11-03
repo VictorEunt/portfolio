@@ -1,17 +1,25 @@
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
-.tc-header {
-  background: #e3e6e8;
+.aha-header {
+  background: #f9f9f9;
+  padding-top: 5%;
   padding-bottom: 1%;
   
   h1{
     color: #34495e;
+    margin-bottom: 3px;
+    line-height: 85%;
+  }
+  h3{
+    color: #4a4a4a;
+    line-height: 95%;
+    margin-top: 0;
   }
 }
 
-.tc-subheader {
-  background: #34495e;
+.aha-subheader {
+  background: #4a4a4a;
   margin-bottom: 50px;
   
   h6 {
@@ -19,17 +27,26 @@
   }
 }
 
-.tc-project {
+.aha-project {
   
   margin-top: 5%;
   padding: 0 5% 0 5%;
   
+  h3 {
+    color: #e74c3c;
+  }
+  
+  h6 {
+    color: #4a4a4a;
+  }
+  
   .thumbnail {
+    
+    border-color: #e74c3c;
     p {
       line-height: 100%;
     }
   }
-
 }
 
 .web-copy {
@@ -37,7 +54,7 @@
   margin-bottom: 5%;
 }
 
-.conclusion-section {
+.aha-conclusions {
   background: #f1f3f4;
   padding: 5% 5% 5% 5%;
   margin-bottom: 50px;
@@ -53,23 +70,6 @@
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
-.tc-project {
-  
-  .database-image .thumbnail 
-    {
-      height: 450px;
-    }
-  
-  .form-image .thumbnail 
-    {
-      height: 475px;
-    }
-    
-  .interface-image .thumbnail 
-    {
-      height: 400px;
-    }
-}
 	
 }
 
@@ -77,22 +77,5 @@
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   
-  .tc-project {
-      
-  .database-image .thumbnail 
-    {
-      height: 475px;
-    }
-  
-  .form-image .thumbnail 
-    {
-      height: 525px;
-    }
-    
-  .interface .thumbnail 
-    {
-      height: 450px;
-    }
-}
 
 }
