@@ -1,15 +1,22 @@
 <div class="container-fluid aha-header">
   <div class="row">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+      <h3 class="text-center">Medical Journalists On the Go</h3>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid aha-byline">
+  <div class="row">
     <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-      <h1 class="text-center">American Heart Association:<br>A Usability Study</h1>
-      <h3 class="text-center">The Story of a Modern Medical Journalist</h3>
+      <h2 class="text-center">The American Heart Association:<br>A Usability Study</h2>
     </div>
   </div>
 </div>
 
 <div class="container-fluid aha-subheader">
   <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-12 col-md-8 col-md-offset-2">
       <h6 class="text-center">User Research: Getting to Know Medical Journalists</h6>
     </div>
   </div>
@@ -22,14 +29,15 @@
         <%= image_tag('aha-persona.png', :class=>'img-responsive') %>
         <div class="caption">
           <h5>Medical Journalist Persona, Russell</h5>
-          <p>1 of 2 data-based personas, Russell's goals and frustrations helped guide the usability testing. His data is a synthesis of 7 interviews of participants from the medical and journalism fields.</p>
+          <p>1 of 2 data-based personas, Russell's goals and frustrations helped guide the usability testing. His data is a synthesis of 6 interviews from participants in the medical and journalism fields.</p>
         </div>
       </div>
     </div>
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 col-lg-6">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 col-lg-6 aha-content-right">
       <h3>Interviews and Synthesis</h3>
       <h6>Taking Notes at a Medical Conference: It's difficult if you can't find the room.</h6>
-      <p>The American Heart Association (AHA) maintains an intranet site for journalists covering the AHA conference, Scientific Sessions. With late-breaking news releases, media briefings, and tightly scheduled interviews, medical conferences can create time constraints for journalists. Quick access to resources is essential.
+      <p>The American Heart Association (AHA) maintains an intranet site for journalists covering the AHA conference, Scientific Sessions. Quick access to resources is essential.</p> 
+      <h4>With late-breaking news releases, media briefings, and tightly scheduled interviews, medical conferences create time constraints for journalists.</h4>
       <p>With AHA requesting a review of the site, the 6 member usability team found participants from the medical and journalism fields to find out some answers, like:</p>
       <ul>
         <li>What would they use an intranet site for?</li>
@@ -43,20 +51,24 @@
   </div>
 </div>
 
-  <div class="container-fluid aha-conclusions">
+  <div class="container-fluid conclusion-section">
     <div class="row">
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6 aha-conclusions">
       <h6>The Tool of Data-Based Personas</h6>
-      <p>With User Research, I learned that covering a medical conference can make for a busy and challenging day for a journalist. By synthesizing the interview responses into personas with bios, goals, frustrations, and motiviations, I now had an impactful tool to inform and guide the heuristic evaluation, card sort, and scenario-based usability testing for the Scientific Sessions site.</p>
-      <p></p>
-      </div>
+      <p>With user research, I learned that for journalists a medical conference can make for a challenging day. From synthesizing the interview responses into personas with bios, goals, frustrations, and motiviations, I now had an impactful tool to inform the following user testing:
+        <ul>
+          <li>A card sort,</li> 
+          <li>A heuristic evaluation, and</li>
+          <li>The scenario-based usability testing.</li>
+        </ul>
+    </div>
     </div>
   </div>
   
 <div class="container-fluid aha-subheader">
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
-      <h6 class="text-center">Planning a Card Sort: Information Archictecture and Thinking Like a Journalist</h6>
+      <h6 class="text-center">Planning and Conducting a Card Sort: Thinking Like a Journalist</h6>
     </div>
   </div>
 </div>
@@ -65,124 +77,100 @@
   <div class="row">
     <div class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4">
       <div class="thumbnail">
-        <%= image_tag('database-iteration1.png', :class=>'img-responsive') %>
+        <%= image_tag('aha-menu-bar.png', :class=>'img-responsive') %>
         <div class="caption">
-          <h5>Database Iteration One</h5>
-          <p>Using object-relational mapping, I created models from my client's data to better understand how the data would be used in a Model, View, and Controller framework (MVC).</p>
+          <h5>Analyzing Structure</h5>
+          <p>As journalists would use the menu bar to navigate and guide their way to information, I analyzed its hiearchical structure and the categories it created.</p>
         </div>
       </div>
     </div>
     <div class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4">
       <div class="thumbnail">
-        <%= image_tag('database-iteration2.png', :class=>'img-responsive') %>
+        <%= image_tag('aha-birdview.png', :class=>'img-responsive') %>
         <div class="caption">
-          <h5>Database Iteration Three</h5>
-          <p>Collaborating with techCorp clients, I realized the document object and its characteristics would remain constant and future metadata associations might be needed.</p>
+          <h5>Taking a Bird's Eye View</h5>
+          <p>To better grasp the site's structure, I zoomed out with my browser to visually analyze the groupings of information.</p>
         </div>
       </div>
     </div>
     <div class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4">
       <div class="thumbnail">
-        <%= image_tag('database-schema.png', :class=>'img-responsive') %>
+        <%= image_tag('aha-card-labels.png', :class=>'img-responsive') %>
         <div class="caption">
-          <h5>Final Database Schema</h5>
-          <p>Working with a PostgreSQL database, the document object was created as the model, <strong>corpus_entry</strong>, which included characteristics of the student, professor, and class.</p>
+          <h5>Choosing Card Labels</h5>
+          <p>Using the goals and motivations of the personas like Russell, the menu items, links, and content headings were prioritized into 25 card labels.</p>
         </div>
       </div>
     </div>
   </div>
   <div class="row">
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6">
-      <h3>Database Design</h3>
-      <h6>Choosing the Right Tools</h6>
-      <p>Using notepads, Visio, and the method of object-relational mapping, I created a database schema that would operate quickly in a MVC framework. Essential to the client, the database would offer flexibility for additional models and growth.</p>
+    <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset col-lg-6 col-lg-offset-0 aha-content-left">
+      <h3>The Card Sort Insight</h3>
+      <h6>Information Architecture and the User's Needs</h6>
+      <p>The 6 participants organized the cards into groups and labeled each group with names like <strong>general information</strong>, <strong>resources</strong>, and <strong>schedules</strong>. From the card sort data, a correlation matrix was used to examine the associations the participants produced.</p>
+    </div>
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-5 aha-content-right">
+      <div class="thumbnail">
+        <%= image_tag('aha-matrix.png', :class=>'img-responsive') %>
+        <div class="caption">
+          <h5>The Correlation Matrix</h5>
+          <p>The matrix data gave evidence to the unnecessary redundancies and lack of clear structure across the 5 webpages.</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="container-fluid aha-conclusions">
-  <div class="row">
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6">
-      <h6>The Final Database Schema</h6>
-      <p>Using Ruby on Rails, a web application framework, I began developing the back-end of techCorp using the reliable and secure Heroku Postgres database. Cloud storage was provided by the Amazon Simple Storage Service (S3).</p>
-      <p>After successful testing of the model and data with the CRUD process (create, read, update, and delete), further web development on the back and front-end could begin.</p>
+<div class="container-fluid conclusion-section">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6 aha-conclusions">
+        <h6>The Card Sort Takeaways</h6>
+        <p>The medical journalists would want an organization in the site that would streamline their access to maps, schedules, interview times, research, contacts, and surveys.</p>
+        <p>The card sort insight would inform the best scenarios to test using the Morae usability software.</p>
+      </div>
     </div>
-  </div>
 </div>
 
 <div class="container-fluid aha-subheader">
   <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
-      <h6 class="text-center">Web Development: Users and Uploads</h6>
+    <div class="col-xs-8 col-xs-offset-2 col-sm-12 col-md-8 col-md-offset-2">
+      <h6 class="text-center">Heuristic Evaluations: Examining Usability</h6>
     </div>
   </div>
 </div>
 
 <div class="container-fluid aha-project">
   <div class="row">
-    <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1">
+    <div class="col-sm-10 col-sm-offset-1 col-md-5 col-lg-4 col-lg-offset-1">
       <div class="thumbnail">
-        <%= image_tag('tc-sign-in.png', :class=>'img-responsive') %>
+        <%= image_tag('aha-heuristic.png', :class=>'img-responsive') %>
         <div class="caption">
-          <h5>Creating Users - Iteration One</h5>
-          <p>Using the MVC authentication solution, Devise for Rails, the web application would allow users to sign up and upload a document.</p>
+          <h5>11 Categories of Heuristics</h5>
+          <p>The heuristics utilized were based on significant amounts of research, either through copious amounts of user testing or through prevalent design decisions in best practice studies.</p>
         </div>
       </div>
     </div>
-    <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-0">
-      <div class="thumbnail">
-        <%= image_tag('tc-share.png', :class=>'img-responsive') %>
-        <div class="caption">
-          <h5>Creating Users - Final Iteration</h5>
-          <p>With clear options and instructions, the sign-up page was given the name <strong>Share</strong>, a likeable word that fits the core theme of the corpus.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1 web-copy">
-      <h3>Creating Users and Permissions</h3>
-      <h6>A Database of Users</h6>
-      <p>Using the Devise authentication service, the web application prototype can register users, develop a contact list, and potentially reach out to researchers, professors, and students with incentives and updates.</p>
-    </div>
-    <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-0 web-copy">
-      <h3>Uploading a Document</h3>
-      <h6>Interacting with Users</h6>
-      <p>I developed the form with the guidance of usability principles and user-feedback. Using think-aloud testing, participants helped guide the order and structure of the form fields. For instance, select options were used to help the user quickly and confidently make entries.</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1">
-      <div class="thumbnail">
-        <%= image_tag('form-mockup.png', :class=>'img-responsive') %>
-        <div class="caption">
-          <h5>Building the Form</h5>
-          <p>Understanding how best to organize and group the fields of the form, mockups and user-testing were both utilized. Participants included both students and techCorp clients.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-0">
-      <div class="thumbnail">
-        <%= image_tag('tc-form.png', :class=>'img-responsive') %>
-        <div class="caption">
-          <h5>A User-tested Design</h5>
-          <p>The Corpus Entry form was divided into three sections with the upload document button positioned last, allowing the user to experience the data and document file as simultaneously saved.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid aha-conclusions">
-  <div class="row">
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6">
-      <h6>User-centered Web Development</h6>
-      <p>With the needs of the client and user driving the development, the points of interaction with the end-user became the highest priorities, such as:</p>
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 col-lg-6 aha-content-right">
+      <h3>The Evaluation</h3>
+      <h6>A Methodical Review of a Website</h6>
+      <p>Using evaluation criteria developed by usability professionals, severe problems were noted through 6 individual reviews of the site in the following categories:</p>
       <ul>
-        <li>Ease of use,</li>
-        <li>Confidence in the system,</li>
-        <li>A responsive design, and</li>
-        <li>User-friendly copy.</li>
+        <li>The Homepage,</li>
+        <li>Navigation,</li> 
+        <li>Content,</li>
+        <li>Links, and</li>
+        <li>Design.</li>
       </ul>
-      <p>The listed priorities were accomplished with both web technologies and user feedback. The MVC framework allowed for rapid uploads, Devise authentication created security for the user, Bootstrap structured a mobile-friendly responsive design, and user-feedback benefited the structure, organization, and experience of uploading a document to the corpus.</p>
+      <p>For example, without a responsive menu bar, the user's navigation through the site would lack structure. Features like breadcrumbs and a simple footer sitemap would be useful for the reporters.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid conclusion-section">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6 aha-conclusions">
+      <h6>Synthesizing the Evaluations</h6>
+      <p>With 6 separate evaluations, the most common problems and suggestions were prioritized by the goals and frustrations of the personas. The biggest improvement for the site would come from a reorganization of the content. The redesign would improve with images, color, and familiar words. The changes in design would allow the content to be simply identified and scanned by the journalists.</p>
     </div>
   </div>
 </div>
@@ -190,68 +178,79 @@
 <div class="container-fluid aha-subheader">
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
-      <h6 class="text-center">Designing and Developing the Query Interface</h6>
+      <h6 class="text-center">Moderated Usability Testing</h6>
     </div>
   </div>
 </div>
 
 <div class="container-fluid aha-project">
   <div class="row">
-    <div class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4">
+    <div class="col-sm-10 col-sm-offset-1 col-md-5 col-lg-4 col-lg-offset-1">
       <div class="thumbnail">
-        <%= image_tag('ui-iteration-1.png', :class=>'img-responsive') %>
+        <%= image_tag('aha-morae.png', :class=>'img-responsive') %>
         <div class="caption">
-          <h5>Interface Iteration One</h5>
-          <p>In the mockup of the interface, the ability to easily search through a large corpus would be a guiding priority.</p><br>
+          <h5>Morae Observer</h5>
+          <p>The heuristics utilized were based on significant amounts of research, either through copious amounts of user testing or through prevalent design decisions in best practice studies.</p>
         </div>
       </div>
     </div>
-    <div class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4">
-      <div class="thumbnail">
-        <%= image_tag('tc-explorer.png', :class=>'img-responsive') %>
-        <div class="caption">
-          <h5>Interface Iteration Four</h5>
-          <p>Collaborating with participants, the sidebar of categories and options was appreciated. The <strong>Genre</strong> option was moved to the top as participants most often used this option to query the corpus.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-4">
-      <div class="thumbnail">
-        <%= image_tag('corpus-select-options.png', :class=>'img-responsive') %>
-        <div class="caption">
-          <h5>Final UI Prototype</h5>
-          <p>In the final prototype, a tile format featured essential information and multiple links to the uploaded document.</p><br>
-        </div>
-      </div>
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 col-lg-6 aha-content-right">
+      <h3>Interacting with Site</h3>
+      <h6>Creating Scenarios</h6>
+      <p>Using evaluation criteria developed by usability professionals, severe problems were noted through 6 individual reviews of the site in the following categories:</p>
+      <ul>
+        <li>The Homepage,</li>
+        <li>Navigation,</li> 
+        <li>Content,</li>
+        <li>Links, and</li>
+        <li>Design.</li>
+      </ul>
+      <p>For example, without a responsive menu bar, the user's navigation through the site would lack structure. Features like breadcrumbs and a simple footer sitemap would be useful for the reporters.</p>
     </div>
   </div>
   <div class="row">
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6">
-      <h3>User Interface Design</h3>
-      <h6>Speed and the User Experience</h6>
-      <p>With modern web technologies and a lightweight design, queries could be performed as quick as under 2 seconds: a primary feature of the user experience. Combined with user-feedback, the user interface was developed and modeled into a familiar, intuitive, and reliable experience for users to access information.</p>
+    <div class="col-sm-10 col-sm-offset-1 col-md-5 col-lg-4 col-lg-offset-1">
+      <div class="thumbnail">
+        <%= image_tag('aha-morae-2.png', :class=>'img-responsive') %>
+        <div class="caption">
+          <h5>Morae Manager</h5>
+          <p>The heuristics utilized were based on significant amounts of research, either through copious amounts of user testing or through prevalent design decisions in best practice studies.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 col-lg-6 aha-content-right">
+      <h3>Examining the Data</h3>
+      <h6>Creating Scenarios</h6>
+      <p>Using evaluation criteria developed by usability professionals, severe problems were noted through 6 individual reviews of the site in the following categories:</p>
+      <ul>
+        <li>The Homepage,</li>
+        <li>Navigation,</li> 
+        <li>Content,</li>
+        <li>Links, and</li>
+        <li>Design.</li>
+      </ul>
+      <p>For example, without a responsive menu bar, the user's navigation through the site would lack structure. Features like breadcrumbs and a simple footer sitemap would be useful for the reporters.</p>
     </div>
   </div>
 </div>
 
-<div class="container-fluid aha-conclusions">
+<div class="container-fluid conclusion-section">
   <div class="row">
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6">
-      <h6>The Final Prototype</h6>
-      <p>In a trio of services including Ruby on Rails, Heroku, and Amazon Web Services, I produced a lightweight web application that could store and query large masses of data, and with user-feedback and testing, I could ensure techCorp clients that the forms and queries would be reliable to the end-user.</p>
-      <p>In preparation for growth, the database schema and architecture was built to encompass large amounts of users, large amounts of data, and the ability to add and merge additional records and associations with the existing data.</p>
-      <p>Finally, additional pages were added to the corpus to build trust with the end-user. I included pages such as <strong>About</strong> and <strong>People</strong>, which told the story of the project and its future potential.</p>
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6 aha-conclusions">
+      <h6>People Will Show You the Way</h6>
+      <p>With 6 separate evaluations, the most common problems and suggestions were prioritized by the goals and frustrations of the personas. The biggest improvement for the site would come from a reorganization of the content. The redesign would improve with images, color, and familiar words. The changes in design would allow the content to be simply identified and scanned by the journalists.</p>
     </div>
   </div>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid aha-project">
   <div class="row">
-      <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+      <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-4 col-lg-offset-4">
         <div class="thumbnail">
-          <%= image_tag('tc-people.png', :class=>'img-responsive') %>
+          <%= image_tag('aha-logo.png', :class=>'img-responsive') %>
           <div class="caption">
-            <h5>The People Page</h5>
+            <h5>AHA's Scientific Sessions</h5>
+            <p>The usability recommendations were completed by a team of technical communicators under the guidance of usability expert, Dr. Erin Friess.</p>
           </div>
         </div>
     </div>
