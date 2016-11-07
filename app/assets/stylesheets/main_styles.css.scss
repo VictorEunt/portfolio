@@ -13,10 +13,10 @@ $text-color: #262626;
 $link-color: #e67e22;
 $navbar-height: 60px;
 $navbar-default-bg: #f9f9f9;
-$navbar-default-link-color: #1abc9c;
+$navbar-default-link-color: #34495e;
 $navbar-default-link-active-bg: #f9f9f9;
-$navbar-default-link-active-color: #34495e;
-$navbar-default-link-hover-color: #34495e;
+$navbar-default-link-active-color: #1abc9c;
+$navbar-default-link-hover-color: #1abc9c;
 $navbar-default-border: #f9f9f9;
 $navbar-default-toggle-border-color: #f9f9f9;
 $navbar-default-toggle-hover-bg: none;
@@ -46,7 +46,7 @@ $panel-inner-border: #f9f9f9;
 $thumbnail-padding: 3%;
 $thumbnail-bg: transparent;
 $thumbnail-border-radius: 0;
-$thumbnail-border: #1abc9c;
+$thumbnail-border: #34495e;
 $well-bg: #f9f9f9;
 
 
@@ -166,7 +166,7 @@ h4 {
 	bottom: 0;
 	height: 100px;
 	width: 100%;
-	background: #1abc9c;
+	background: #bdc3c7;
 }
 
 /* Small devices (tablets, 768px and up) */

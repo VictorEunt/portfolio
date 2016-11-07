@@ -16,13 +16,13 @@
 }
 
 .aha-byline {
-  background: #e3e6e8;
+  background: #e74c3c;
   padding-top: 1%;
   padding-bottom: 1%;
   
   h2{
     font-size: 125%;
-    color: #34495e;
+    color: #f9f9f9;
     margin-top: 5px;
     margin-bottom: 5px;
     line-height: 95%;
@@ -118,7 +118,28 @@
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
+.aha-header {
+  
+  h3{
+    font-size: 200%;
+    margin-top: 25px;
+  }
+}
+
+  .aha-byline {
+
+    h2{
+      font-size: 150%;
+    }
+  }
+  
+.aha-subheader {
+  margin-bottom: 75px;
+}
+  
   .aha-project {
+    margin-bottom: 25px;
+    
     .aha-content-right {
       padding-left: 45px;
     }
@@ -129,6 +150,30 @@
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  
 
+.aha-header {
+  
+  h3{
+    font-size: 250%;
+    margin-top: 25px;
+  }
+}
+
+  .aha-byline {
+
+    h2{
+      font-size: 150%;
+    }
+  }
+  
+.aha-subheader {
+  margin-bottom: 75px;
+}
+  
+  .aha-project {
+    .aha-content-right {
+      padding-left: 45px;
+    }
+  }
+	
 }
