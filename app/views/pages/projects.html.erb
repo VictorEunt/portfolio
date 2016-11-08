@@ -403,3 +403,37 @@
   </div>
 </div>
 
+<!-- Back up button -->
+<%= link_to '#', class: "back-to-top" do %>
+  <span class="glyphicon glyphicon-arrow-up"></span>
+<% end %>
+
+  <script>
+      var amountScrolled = 300;
+
+    $(window).scroll(function() {
+      if ( $(window).scrollTop() > amountScrolled ) {
+        $('a.back-to-top').fadeIn('slow');
+      } else {
+        $('a.back-to-top').fadeOut('slow');
+      }
+    });
+
+    $('a.back-to-top').click(function() {
+      $('html, body').animate({
+        scrollTop: 250
+      }, 700);
+      return false;
+    });
+
+  </script>
+
+  <script>
+  $(document).on('click','.down-to-anchor', function(event) {
+      event.preventDefault();
+      var target = "#" + this.getAttribute('data-target');
+      $('html, body').animate({
+          scrollTop: $(target).offset().top
+      }, 700);
+  });
+  </script>

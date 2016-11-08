@@ -8,6 +8,7 @@
   
   h3{
     font-size: 175%;
+    font-weight: 700;
     color: #4a4a4a;
     line-height: 100%;
     margin-top: 15px;
@@ -22,6 +23,7 @@
   
   h2{
     font-size: 125%;
+    font-weight: 700;
     color: #f9f9f9;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -55,8 +57,9 @@
     }
   
   h3 {
-    margin-top: 0;
+    font-weight: 700;
     color: #e74c3c;
+    margin-top: 0;
   }
   
   h6 {
@@ -82,6 +85,7 @@
   h4 {
     padding: 0 5% 0 5%;
     font-style: italic;
+    font-weight: 700;
     line-height: 150%;
     color: #34495e;
   }
@@ -101,6 +105,41 @@
   padding: 0 8% 0 8%;
 }
 
+.back-to-top {
+  background: none;
+  margin: 0;
+  position: fixed;
+  bottom: 25%;
+  right: 2%;
+  width: 50px;
+  height: 50px;
+  z-index: 100;
+  display: none;
+  text-decoration: none;
+  color: rgba(231, 76, 60, .8);
+  background-color: transparent;
+}
+ 
+.back-to-top span {
+  font-size: 50px;
+}
+
+.back-to-top span:visited {
+  color: rgba(231, 76, 60, .7);
+}
+
+.back-to-top:hover {
+  color: rgba(231, 76, 60, .7);
+}
+
+.back-to-top:active {
+  color: rgba(231, 76, 60, .7);
+}
+
+.back-to-top:focus {
+  color: rgba(231, 76, 60, .8);
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   
@@ -111,6 +150,16 @@
     }
     
   }
+  
+  .back-to-top {
+  right: 3%;
+  width: 55px;
+  height: 55px;
+  }
+
+  .back-to-top span {
+  font-size: 55px;
+  }
 
 }
 
@@ -118,24 +167,24 @@
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
-.aha-header {
-  
-  h3{
-    font-size: 200%;
-    margin-top: 25px;
-  }
-}
+  .aha-header {
 
-  .aha-byline {
-
-    h2{
-      font-size: 150%;
+    h3{
+      font-size: 200%;
+      margin-top: 25px;
     }
   }
-  
-.aha-subheader {
-  margin-bottom: 75px;
-}
+
+    .aha-byline {
+
+      h2{
+        font-size: 150%;
+      }
+    }
+
+  .aha-subheader {
+    margin-bottom: 75px;
+  }
   
   .aha-project {
     margin-bottom: 25px;
@@ -144,6 +193,16 @@
       padding-left: 45px;
     }
   }
+  
+  .back-to-top {
+  right: 5%;
+  width: 65px;
+  height: 65px;
+  }
+
+  .back-to-top span {
+    font-size: 65px;
+  }
 	
 }
 
@@ -151,13 +210,13 @@
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
-.aha-header {
-  
-  h3{
-    font-size: 250%;
-    margin-top: 25px;
+  .aha-header {
+
+    h3{
+      font-size: 250%;
+      margin-top: 25px;
+    }
   }
-}
 
   .aha-byline {
 
@@ -166,14 +225,24 @@
     }
   }
   
-.aha-subheader {
-  margin-bottom: 75px;
-}
+  .aha-subheader {
+    margin-bottom: 75px;
+  }
   
   .aha-project {
     .aha-content-right {
       padding-left: 45px;
     }
+  }
+  
+  .back-to-top {
+  right: 7%;
+  width: 70px;
+  height: 70px;
+  }
+
+  .back-to-top span {
+    font-size: 70px;
   }
 	
 }

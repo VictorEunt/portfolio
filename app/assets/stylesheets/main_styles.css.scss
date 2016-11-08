@@ -49,9 +49,9 @@ $thumbnail-border-radius: 0;
 $thumbnail-border: #34495e;
 $well-bg: #f9f9f9;
 
-
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
@@ -195,7 +195,7 @@ h4 {
 }
   .nav_link {
   font-size: 110%;
-  width: 100px;
+  width: 100%;
 	font-weight: bold;
   }
 
@@ -214,6 +214,7 @@ h4 {
   }
   .nav_link {
 	 margin-bottom: 2px;
+   width: 125px;
   }
   p {
     font-size: 18px;

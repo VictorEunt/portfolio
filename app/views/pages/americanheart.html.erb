@@ -36,11 +36,11 @@
     <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 col-lg-5 aha-content-right">
       <h3>Interviews and Synthesis</h3>
       <h6>Taking Notes at a Medical Conference: It's difficult if you can't find the room.</h6>
-      <p>The American Heart Association (AHA) maintains Newsroom, an intranet site for journalists covering the Scientific Sessions, an AHA conference. Quick access to resources is essential.</p> 
-      <h4>With late-breaking news releases, media briefings, and tightly scheduled interviews, medical conferences create time constraints for journalists.</h4>
+      <p>The American Heart Association (AHA) maintains Newsroom, an intranet site for journalists covering the Scientific Sessions, an annual AHA conference.</p> 
+      <h4>With late-breaking news releases, media briefings, and tightly scheduled interviews, the Scientific Sessions conference is full of time constraints for journalists. Quick access to resources is essential.</h4>
     </div>
     <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 aha-content-center">
-      <p>With AHA requesting a review of the site, the 6-member usability team found participants from the medical and journalism fields to find out some answers, like:</p>
+      <p>So, with AHA requesting a review of the Newsroom site, the 6-member usability team found participants from the medical and journalism fields to find out some answers, like:</p>
       <ul>
         <li>What would they use an intranet site for?</li>
         <li>Would they use it before, during, and after the conference?</li> 
@@ -57,11 +57,11 @@
     <div class="row">
     <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 aha-conclusions">
       <h6>The Tool of Data-Based Personas</h6>
-      <p>With user research, I learned that for journalists a medical conference can make for a challenging day. From synthesizing the interview responses into personas with bios, goals, frustrations, and motivations, I now had an impactful tool to inform the following user testing:
+      <p>The usability team synthesized the interview responses into personas that included bios, goals, frustrations, and motivations,  so I now had an impactful tool to inform my role in the usability testing. I now had a clear perspective of the challenging day the journalists would have at the conference and some first-hand solutions that could facilitate their tasks. With this perspective, I would accomplish the following usability tests:
         <ul>
-          <li>A card sort,</li> 
-          <li>A heuristic evaluation, and</li>
-          <li>The scenario-based usability testing.</li>
+          <li>A card sort analyzed with a correlation matrix,</li> 
+          <li>A heuristic evaluation with protocols based on user testing and research, and</li>
+          <li>Think-aloud protocols recorded with Morae Software.</li>
         </ul>
     </div>
     </div>
@@ -254,17 +254,6 @@
       </ol>
     </div>
   </div>
-  <div class="row">
-      <div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
-        <div class="thumbnail">
-          <%= image_tag('aha-logo.png', :class=>'img-responsive') %>
-          <div class="caption">
-            <h5>AHA's Scientific Sessions</h5>
-            <p>The usability recommendations were completed by a team of technical communicators under the guidance of usability expert, Dr. Erin Friess.</p>
-          </div>
-        </div>
-    </div>
-  </div>
 </div>
 
 <!--American Heart Project-->
@@ -308,3 +297,38 @@
     </div>
   </div>
 </div>
+
+<!-- Back up button -->
+<%= link_to '#', class: "back-to-top" do %>
+  <span class="glyphicon glyphicon-arrow-up"></span>
+<% end %>
+
+  <script>
+      var amountScrolled = 300;
+
+    $(window).scroll(function() {
+      if ( $(window).scrollTop() > amountScrolled ) {
+        $('a.back-to-top').fadeIn('slow');
+      } else {
+        $('a.back-to-top').fadeOut('slow');
+      }
+    });
+
+    $('a.back-to-top').click(function() {
+      $('html, body').animate({
+        scrollTop: 250
+      }, 700);
+      return false;
+    });
+
+  </script>
+
+  <script>
+  $(document).on('click','.down-to-anchor', function(event) {
+      event.preventDefault();
+      var target = "#" + this.getAttribute('data-target');
+      $('html, body').animate({
+          scrollTop: $(target).offset().top
+      }, 700);
+  });
+  </script>
