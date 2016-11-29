@@ -105,39 +105,41 @@
   padding: 0 8% 0 8%;
 }
 
-.back-to-top {
-  background: none;
-  margin: 0;
-  position: fixed;
-  bottom: 25%;
-  right: 2%;
-  width: 50px;
-  height: 50px;
-  z-index: 100;
-  display: none;
-  text-decoration: none;
-  color: rgba(231, 76, 60, .8);
-  background-color: transparent;
-}
- 
-.back-to-top span {
-  font-size: 50px;
-}
+#american-heart-arrow {
+  .back-to-top {
+    background: none;
+    margin: 0;
+    position: fixed;
+    bottom: 25%;
+    right: 2%;
+    width: 50px;
+    height: 50px;
+    z-index: 100;
+    display: none;
+    text-decoration: none;
+    color: rgba(231, 76, 60, .8);
+    background-color: transparent;
+  }
 
-.back-to-top span:visited {
-  color: rgba(231, 76, 60, .7);
-}
+  .back-to-top span {
+    font-size: 50px;
+  }
 
-.back-to-top:hover {
-  color: rgba(231, 76, 60, .7);
-}
+  .back-to-top span:visited {
+    color: rgba(231, 76, 60, .7);
+  }
 
-.back-to-top:active {
-  color: rgba(231, 76, 60, .7);
-}
+  .back-to-top:hover {
+    color: rgba(231, 76, 60, .7);
+  }
 
-.back-to-top:focus {
-  color: rgba(231, 76, 60, .8);
+  .back-to-top:active {
+    color: rgba(231, 76, 60, .7);
+  }
+
+  .back-to-top:focus {
+    color: rgba(231, 76, 60, .8);
+  }
 }
 
 /* Small devices (tablets, 768px and up) */

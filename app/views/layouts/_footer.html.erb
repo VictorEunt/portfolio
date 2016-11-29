@@ -1,9 +1,28 @@
 <div id="footer_layout">
-	<div class="container">
+	<div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-4 col-xs-offset-2 col-lg-3 col-lg-offset-3">
+        <p><%= link_to 'Home', root_path, class: "footer-link" %></p>
+        <p><%= link_to 'About', about_path, class: "footer-link" %></p>
+        <p><%= link_to 'Projects', projects_path, class: "footer-link" %></p>
+        <p><%= link_to "Resume", "estrada_resume.pdf", class: "footer-link" %></p>
+        <p><%= link_to 'Contact', contact_path, class: "footer-link" %></p>
+      </div>
+      <div class="col-xs-4 col-xs-offset-2 col-lg-3 col-lg-offset-2">
+        <p><%= link_to "Twitter", "https://twitter.com/victoreUNT", :class=>"footer-link" %></p>
+        <p><%= link_to "LinkedIn", "https://www.linkedin.com/in/victor-estrada-7927a2125", :class=>"footer-link" %></p>
+        <p><%= link_to "GitHub", "https://github.com/VictorEunt", :class=>"footer-link" %></p>
+        <p><%= link_to "Blog", "https://uxwriting.wordpress.com/", :class=>"footer-link" %></p>
+        <p><%= mail_to "victorestrada.ux@gmail.com", "Email Me", :class=>"footer-link" %></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footer-note">
+    <div class="container-fluid">
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12">
-					<h6 id="footer_copy">Developed with Ruby on Rails</h6>
-					<p id="signature">by Victor Estrada | 2016</p>
+				<div class="col-xs-12">
+          <h6 class="text-center">Developed with Ruby on Rails | <%= Date.today.year %></h6>
 				</div>
 		</div>
 	</div>

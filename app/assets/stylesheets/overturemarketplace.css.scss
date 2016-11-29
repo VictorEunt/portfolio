@@ -1,0 +1,331 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+.overture-header {
+  background: #e2e8e9;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  
+  h3{
+    font-size: 175%;
+    font-weight: 700;
+    color: #34495e;
+    line-height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.overture-project {
+  
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  background-color: #2980b9;
+  
+  .section-spacing {
+    padding-top: 40px;
+    }
+  
+  .overture-content-left {
+    padding: 0 8% 0 8%;
+    }
+  
+  .overture-content-right {
+    padding: 0 8% 0 8%;
+    }
+  
+  .overture-content-center {
+    padding: 0 8% 0 8%;
+    }
+  
+  p {
+    color: #f9f9f9;
+    
+  }
+  
+  h2 {
+    color: #ecf0f1;
+  }
+  
+  h3 {
+    font-size: 150%;
+    font-weight: 700;
+    color: #ecf0f1;
+    margin-top: 0;
+  }
+  
+  h5 {
+    color: #ecf0f1;
+  }
+  
+  h6 {
+    margin-top: 0;
+    color: #f9f9f9;
+  }
+  
+  li {
+    color: #f9f9f9;
+    line-height: 100%;
+    margin-bottom: 15px;;
+  }
+  
+  .thumbnail {
+    
+    border: none;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: #3498db;
+    p {
+      color: #f9f9f9;
+      line-height: 100%;
+
+    }
+    
+    h5 {
+      color: #e2e8e9;
+    }
+    
+    .caption {
+      color: #f9f9f9;
+      padding: 0 5% 0 5%;
+    }
+    
+    h4 {
+      padding: 0 5% 0 5%;
+      font-style: italic;
+      font-weight: 700;
+      line-height: 150%;
+      color: #f9f9f9;
+    }
+    
+  }
+  
+  #quote-thumbnail {
+    background-color: #f9f9f9;
+    
+    p {
+      color: #34495e;
+    }
+    
+    h4 {
+      color: #34495e;
+    }
+    
+    h5 {
+      color: #3498db;
+    }
+    
+    .caption {
+      color: #34495e;
+    }
+  }
+  
+  
+
+}
+
+.overture-conclusion-section {
+  background: #f1f3f4;
+  margin-bottom: 0;
+  padding-bottom: 50px;
+  
+  h3 {
+    color: #34495e;
+    font-size: 150%;
+    font-weight: 700;
+  }
+  
+  li {
+    line-height: 100%;
+    margin-bottom: 15px;;
+  }
+  
+  .thumbnail {
+    
+    border: none;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    
+    p {
+      line-height: 100%;
+    }
+    
+    .caption {
+      padding: 0 5% 0 5%;
+    }
+  }
+}
+
+.overture-conclusion-section .overture-conclusions{
+  padding: 0 8% 0 8%;
+}
+
+#overture-arrow {
+  .back-to-top {
+    background: none;
+    margin: 0;
+    position: fixed;
+    bottom: 25%;
+    right: 2%;
+    width: 50px;
+    height: 50px;
+    z-index: 100;
+    display: none;
+    text-decoration: none;
+    color: rgba(243, 156, 18,.8);
+    background-color: transparent;
+  }
+
+  .back-to-top span {
+    font-size: 50px;
+  }
+
+  .back-to-top span:visited {
+    color: rgba(243, 156, 18,.7);
+  }
+
+  .back-to-top:hover {
+    color: rgba(243, 156, 18,.7);
+  }
+
+  .back-to-top:active {
+    color: rgba(243, 156, 18,.7);
+  }
+
+  .back-to-top:focus {
+    color: rgba(243, 156, 18,.8);
+  }
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  
+  .thumbnail {
+    
+    .caption {
+      padding: 0 12% 0 12%;
+    }
+    
+  }
+  
+  .back-to-top {
+  right: 3%;
+  width: 55px;
+  height: 55px;
+  }
+
+  .back-to-top span {
+  font-size: 55px;
+  }
+
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  .overture-header {
+    margin-top: 0;
+
+    h3{
+      font-size: 200%;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 0;
+    }
+  }
+
+    .overture-byline {
+
+      h2{
+        font-size: 150%;
+      }
+    }
+
+  .overture-subheader {
+    margin-bottom: 75px;
+  }
+  
+  .overture-project {
+    margin-top: 0;
+    margin-bottom: 0;
+    
+    .overture-content-right {
+      padding-left: 45px;
+    }
+    
+    .overture-content-center {
+      padding: 50px 8% 0 8%;
+      }
+    
+  }
+  
+  .back-to-top {
+  right: 5%;
+  width: 65px;
+  height: 65px;
+  }
+
+  .back-to-top span {
+    font-size: 65px;
+  }
+	
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+  .overture-header {
+    
+    h3{
+      font-size: 250%;
+    }
+  }
+
+  .overture-byline {
+
+    h2{
+      font-size: 150%;
+    }
+  }
+  
+  .overture-subheader {
+    padding-top: 25px;
+    margin-bottom: 0;
+  }
+  
+  .overture-project {
+    .section-spacing {
+      padding-top: 50px;
+    }
+    
+    .overture-content-left {
+      padding: 0 45px 0 0;
+    }
+    
+    .overture-content-right {
+      padding: 0 0 0 45px;
+    }
+    
+    .overture-content-center {
+      padding: 50px 6% 0 6%;
+    }
+  }
+  
+.overture-conclusion-section .overture-conclusions{
+  padding: 50px 6% 50px 6%;
+}
+  
+  .back-to-top {
+  right: 7%;
+  width: 70px;
+  height: 70px;
+  }
+
+  .back-to-top span {
+    font-size: 70px;
+  }
+	
+}

@@ -299,10 +299,11 @@
 </div>
 
 <!-- Back up button -->
-<%= link_to '#', class: "back-to-top" do %>
-  <span class="glyphicon glyphicon-arrow-up"></span>
-<% end %>
-
+<div id="american-heart-arrow">
+  <%= link_to '#', class: "back-to-top" do %>
+    <span class="glyphicon glyphicon-arrow-up"></span>
+  <% end %>
+</div>
   <script>
       var amountScrolled = 300;
 
@@ -316,7 +317,7 @@
 
     $('a.back-to-top').click(function() {
       $('html, body').animate({
-        scrollTop: 250
+        scrollTop: 0
       }, 700);
       return false;
     });
