@@ -1,7 +1,68 @@
+<div class="container-fluid ruby-project" id="ruby-link">
+  <div class="row">
+    <div class="col-sm-12 col-md-5 col-lg-4 col-lg-offset-1">
+      <%= link_to (image_tag ('techcorp-home.png'), class: 'img-responsive'), techcorp_path %>
+    </div>
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 col-lg-5">
+      <h2>Developing an Online Database and Interface</h2>
+      <p><strong>The Problem:</strong> Clients of techCorp requested a web-based corpus to share and organize documents produced by Technical Communication students.</p>
+      <p><strong>The Solution:</strong> To create a simple, lightweight, and fast interface, I chose web technologies that could be used to prototype a RESTful application.</p><br>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-xs-12 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-2">
+      <h5>My Role</h5>
+      <ul>
+        <li>Audience Analysis</li>
+        <li>Database Design</li>
+        <li>Web Development</li>
+        <li>UI Design</li>
+        <li>UX Testing</li>
+      </ul><br>
+    </div>
+    <div class="col-xs-12 col-sm-5 col-md-5">
+      <div>
+        <h5>The Tools</h5>
+        <ul>
+          <li>Ruby on Rails</li>
+          <li>Git Bash</li>
+          <li>Adobe Creative Cloud</li>
+          <li>Bootstrap</li>
+          <li>Think-alouds</li>
+        </ul><br>   
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="container-fluid tc-header">
   <div class="row">
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
-      <h1 class="text-center">techCorp: Developing an Online Database and Interface</h1>
+    <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
+      <h1 class="text-center">techCorp</h1>
+      <h4 class="text-center">A Responsive App for Sharing Technical Documents</h4>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid tc-project">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1 col-md-5 col-lg-4 col-lg-offset-1">
+      <div class="thumbnail">
+        <%= image_tag('share-desk-mobile.png', :class=>'img-responsive') %>
+        <div class="caption">
+          <h5>A Responsive Form</h5>
+          <p>Professors and Students can upload documents from desktop and mobile browsers.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 col-lg-6">
+      <h3>My Process</h3>
+      <h6>User-Centered Design</h6>
+      <p>For the user interface, I adopted an iterative process to test and discover the best choices for uploading and  searching documents. From wireframing to prototype, professors and students helped test and develop the interface.</p>
+      <h6>The Back-end</h6>
+      <p>So that users could login and upload their technical documents, I took advantage of RESTful services such as Devise and Amazon Web Services&mdash;two popular services built for a Model, View, and Controller (MVC) framework such as Ruby on Rails.</p>
+       
     </div>
   </div>
 </div>
@@ -18,10 +79,10 @@
   <div class="row">
     <div class="col-sm-10 col-sm-offset-1 col-md-5 col-lg-4 col-lg-offset-1">
       <div class="thumbnail">
-        <%= image_tag('tech-doc.png', :class=>'img-responsive') %>
+        <%= image_tag('tc-audience.png', :class=>'img-responsive') %>
         <div class="caption">
-          <h5>Technical Document</h5>
-          <p>A student's technical document featured in techCorp's Amazon Simple Storage Service (S3).</p>
+          <h5>The Audience</h5>
+          <p>Students would share documents for professors and other students to sort through and download.</p>
         </div>
       </div>
     </div>
@@ -116,9 +177,16 @@
 
 <div class="container-fluid tc-project">
   <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6">
+      <h3>Creating Users and Permissions</h3>
+      <h6>A Database of Users</h6>
+      <p>Using the Devise authentication service, the web application prototype can register users, develop a contact list, and potentially reach out to researchers, professors, and students with incentives and updates.</p>
+    </div>
+  </div>
+  <div class="row">
     <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1">
       <div class="thumbnail">
-        <%= image_tag('tc-sign-in.png', :class=>'img-responsive') %>
+        <%= image_tag('tc-register-mockup.png', :class=>'img-responsive') %>
         <div class="caption">
           <h5>Creating Users - Iteration One</h5>
           <p>Using the MVC authentication solution, Devise for Rails, the web application would allow users to sign up and upload a document.</p>
@@ -127,19 +195,14 @@
     </div>
     <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-0">
       <div class="thumbnail">
-        <%= image_tag('tc-share.png', :class=>'img-responsive') %>
+        <%= image_tag('tc-register.png', :class=>'img-responsive') %>
         <div class="caption">
           <h5>Creating Users - Final Iteration</h5>
           <p>With clear options and instructions, the sign-up page was given the name <strong>Share</strong>, a likeable word that fits the core theme of the corpus.</p>
         </div>
       </div>
     </div>
-    <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1 web-copy">
-      <h3>Creating Users and Permissions</h3>
-      <h6>A Database of Users</h6>
-      <p>Using the Devise authentication service, the web application prototype can register users, develop a contact list, and potentially reach out to researchers, professors, and students with incentives and updates.</p>
-    </div>
-    <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-0 web-copy">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6">
       <h3>Uploading a Document</h3>
       <h6>Interacting with Users</h6>
       <p>I developed the form with the guidance of usability principles and user-feedback. Using think-aloud testing, participants helped guide the order and structure of the form fields. For instance, select options were used to help the user quickly and confidently make entries.</p>
@@ -255,47 +318,3 @@
   </div>
 </div>
 
-<div class="container-fluid ruby-project" id="ruby-link">
-  <div class="row">
-    <div class="col-sm-12 col-md-5 col-lg-4 col-lg-offset-1">
-      <%= link_to (image_tag ('techcorp-home.png'), class: 'img-responsive'), techcorp_path %>
-    </div>
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 col-lg-5">
-      <h2>Developing an Online Database and Interface</h2>
-      <p><strong>The Problem:</strong> Clients of techCorp requested a web-based corpus to share and organize documents produced by Technical Communication students.</p>
-      <p><strong>The Solution:</strong> To create a simple, lightweight, and fast interface, I chose web technologies that could be used to prototype a RESTful application.</p><br>
-    </div>
-  </div>
-  
-  <div class="row">
-    <div class="col-xs-12 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-2">
-      <h5>My Role</h5>
-      <ul>
-        <li>Audience Analysis</li>
-        <li>Database Design</li>
-        <li>Web Development</li>
-        <li>UI Design</li>
-        <li>UX Testing</li>
-      </ul><br>
-    </div>
-    <div class="col-xs-12 col-sm-5 col-md-5">
-      <div>
-        <h5>The Tools</h5>
-        <ul>
-          <li>Ruby on Rails</li>
-          <li>Git Bash</li>
-          <li>Adobe Creative Cloud</li>
-          <li>Bootstrap</li>
-          <li>Think-alouds</li>
-        </ul><br>   
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-      <div>
-        <h5>Technical Communication</h5>
-        <p>So that users could login and upload their technical documents, I took advantage of RESTful services such as Devise and Amazon Web Services&mdash;two popular services built for a Model, View, and Controller (MVC) framework such as Ruby on Rails.</p>
-        <p>For the user interface, I adopted an iterative process to test and discover the best choices for searching documents.</p>  
-      </div>
-    </div>
-  </div>
-</div>

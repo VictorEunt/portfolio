@@ -7,6 +7,13 @@
   
   h1{
     color: #34495e;
+    margin-bottom: 5px;
+  }
+  
+  h4{
+    font-family: 'Lato', sans-serif;
+    color: #34495e;
+    margin-top: 0;
   }
 }
 
@@ -22,11 +29,18 @@
 .tc-project {
   
   margin-top: 5%;
+  margin-bottom: 50px;
   padding: 0 5% 0 5%;
   
+  h6 {
+    margin-top: 25px;
+    margin-bottom: 5px;
+  }
+  
   .thumbnail {
+    border: none;
+    
     p {
-      font-family: 'Bitter', serif;
       font-size: 14px;
       line-height: 110%;
     }
@@ -42,7 +56,7 @@
 .conclusion-section {
   background: #f1f3f4;
   padding: 5% 5% 5% 5%;
-  margin-bottom: 50px;
+  margin-bottom: 0;
 }
 
 /* Small devices (tablets, 768px and up) */
