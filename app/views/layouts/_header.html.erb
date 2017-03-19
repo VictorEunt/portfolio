@@ -9,7 +9,7 @@
 					<span class="icon-bar"></span>
     </button>
     <%= link_to image_tag("estrada_turq.png", :alt=>'estrada logo', :class=>'navbar-brand'), root_path %>
-		<p><%= link_to "Resume", 'estrada_resume.pdf', class: "navbar-text", id: "resume-link" %></p>	
+		<p><%= link_to "Resume", 'resume.pdf', class: "navbar-text", id: "resume-link" %></p>	
   </div>
   
 
@@ -23,7 +23,7 @@
       <% end %>
       <li class="<%= active_class(about_path) %>"><%= link_to "About", about_path, class: "nav_link" %></li>
       <li class="<%= active_class(projects_path) %>"><%= link_to "Projects", projects_path, class: "nav_link" %></li>
-      <li><%= link_to "Resume", 'estrada_resume.pdf', class: "nav_link" %></li>
+      <li><%= link_to "Resume", 'resume.pdf', class: "nav_link" %></li>
       <li class="<%= active_class(contact_path) %>"><%= link_to "Contact", contact_path, class: "nav_link" %></li>
     </ul>
   </div><!-- /.navbar-collapse -->
