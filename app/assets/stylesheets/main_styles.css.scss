@@ -36,6 +36,9 @@ $btn-default-border: #34495e;
 $btn-info-color: #e74c3c;
 $btn-info-bg: #f9f9f9;
 $btn-info-border: #e74c3c;
+$btn-warning-color: #f9f9f9;
+$btn-warning-bg: rgba(255,255,255,.1);
+$btn-warning-border: #EDF0F1;
 $btn-border-radius-large: 0;
 $btn-border-radius-base: 0;
 $input-border: #bdc3c7;
@@ -65,9 +68,9 @@ $well-bg: #f9f9f9;
 	position: absolute;
 	left: 50%;
 	width: auto;
-	height: 80px;
-	margin-left: -60px !important;  /* 44px 50% of your logo width */
-	margin-top: -12px;
+	height: 66px;
+	margin-left: -62.5px !important;  /* 44px 50% of your logo width */
+	margin-top: -6px;
 }
 .navbar-brand:hover {
 	opacity: .6;
@@ -79,13 +82,12 @@ $well-bg: #f9f9f9;
   margin: 6px 0 0 2%;
   float: left;
 }
-.navbar-default
-{
-  border-bottom: 1px solid #34495e;
+.navbar-default {
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
   margin-bottom: 0;
 }
 .navbar-default .navbar-toggle .icon-bar {
-	background-color: #34495e;
+	background-color: #3498DB;
 	height: 5px;
 	margin-bottom: 5px;
 }
@@ -101,7 +103,7 @@ $well-bg: #f9f9f9;
 	font-family: 'Bitter', serif;
   font-size: 14px;
   font-weight: bold;
-	color: #34495e;
+	color: #3498DB;
 }
 #resume-link:hover {
 	text-decoration:none;
@@ -163,7 +165,7 @@ h4 {
 
 #footer-note {
   background: #95a5a6;
-  
+
   h6 {
     font-size: 12px;
     color: #ecf0f1;
