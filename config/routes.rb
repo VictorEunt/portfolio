@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get "techcorp" => "pages#techcorp"
   get "americanheart" => "pages#americanheart"
   get "overturemarketplace" => "pages#overturemarketplace"
-  get "home-beta" => "pages#home"
+  get "home" => "pages#home"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
