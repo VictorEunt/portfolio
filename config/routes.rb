@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :clients
 
-  root "pages#home-beta"
+  root "pages#homebeta"
   get "about" => "pages#about"
   get "projects" => "pages#projects"
   get "contact" => "clients#new"
