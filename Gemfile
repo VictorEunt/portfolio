@@ -19,7 +19,6 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass'
-gem 'paperclip', '~> 4.2'
 gem 'font-awesome-sass', '~> 4.7.0'
 
 
@@ -28,7 +27,7 @@ group :development, :test do
 end
 
 group :production do
-  gem 'pg'
+  gem 'pg', '~> 0.21.0'
   gem 'rails_12factor'
 end
 
