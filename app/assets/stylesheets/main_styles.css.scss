@@ -15,10 +15,10 @@ $text-color: #262626;
 $link-color: #e67e22;
 $navbar-height: 60px;
 $navbar-default-bg: #f9f9f9;
-$navbar-default-link-color: #34495e;
+$navbar-default-link-color: #36D1DC;
 $navbar-default-link-active-bg: #f9f9f9;
-$navbar-default-link-active-color: #1abc9c;
-$navbar-default-link-hover-color: #1abc9c;
+$navbar-default-link-active-color: #5B86E5;
+$navbar-default-link-hover-color: #5B86E5;
 $navbar-default-border: #f9f9f9;
 $navbar-default-toggle-border-color: #f9f9f9;
 $navbar-default-toggle-hover-bg: none;
@@ -124,10 +124,9 @@ $well-bg: #f9f9f9;
   text-align: center;
 }
 .nav_link {
-  font-family: 'Bitter', serif;
-  font-size: 18px;
-  font-weight: normal;
-  font-weight: bold;
+  font-family: Lato-Bold;
+  font-size: 16px;
+	color: #e67e22;
 }
 
 h1 {
@@ -260,29 +259,29 @@ h4 {
 	.navbar-toggle {
 		display: none;
 		}
+
+	.navbar-collapse {
+		margin-top: 0;
+	}
+
 	.navbar-text {
 		display:none;
 		}
+
   .navbar-brand {
 	 left: 10%;
-	 bottom: 0%;
-   max-height: 85px;
-   height: 85px;
-   width: auto;
+	 bottom: 0;
    margin: 0 auto;
+	 width: auto;
+	 height: 66px;
   }
  .navbar-right {
-  padding-top: 0%;
-  margin-top: 0%;
-	margin-bottom: 5px;
-  margin-left: 0px;
-  margin-right: 1%;
-  padding-right: 0px;
+  padding: 0;
+  margin: 0 1% 0 0;
 }
   .nav_link {
-  font-size: 110%;
+  font-size: 16px;
   width: 100%;
-	font-weight: bold;
   }
 
   #home_option {
@@ -320,14 +319,14 @@ h4 {
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md-min) {
   .navbar-brand {
-   max-height: 90px;
-   height: 90px;
+
 
   }
   .nav_link {
-	 margin-bottom: 2px;
-   width: 125px;
+	 margin-bottom: 0;
+   width: 90px;
   }
+
   p {
     font-size: 18px;
   }
@@ -365,26 +364,16 @@ h4 {
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: $screen-lg-min) {
   .navbar-brand {
-   display: block;
-	 bottom: 0%;
-   max-height: 100px;
-   height: 100px;
-   width: auto;
-   margin: 0 auto;
+
   }
   .navbar-toggle {
   display: none;
   }
   .navbar-right {
-  padding-top: 0%;
   margin-right: 3%;
-  margin-left: 0%;
-  margin-top: 0px;
   }
   .nav_link {
-  font-size: 18px;
-  width: 125px;
-	margin-bottom: 6px;
+  width: 100px;
   }
 
 	h2 {
@@ -393,4 +382,17 @@ h4 {
 	h3 {
 		font-size: 28px;
 	}
+}
+
+/* Extra Large devices (large desktops, 1440 and up) */
+@media (min-width: 1440px) {
+
+	.navbar-right {
+  margin-right: 4%;
+  }
+
+  .nav_link {
+  width: 110px;
+  }
+
 }

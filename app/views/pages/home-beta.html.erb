@@ -1,55 +1,292 @@
+<!--New update for the portfolio home page-->
 <div id="home-update">
+
+  <!--Homepage Banner-->
   <div id="banner-update">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-xs-12 col-sm-6">
-          <div id="banner-name">V<span class="small">ictor<span> E<span class="small">strada</span></div>
+        <div class="col-xs-12 col-xs-offset-0 col-sm-5 col-sm-offset-1">
+          <div class="col-xs-12">
+            <div id="banner-name">V<span class="small">ictor<span> E<span class="small">strada</span></div>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-sm-6">
-          <div id="banner-subheading">UX Designer<br/>& Researcher</div>
-          <div id="banner-tagline">I guide the UX process to bridge business<br/>goals with consumer needs & desires.</div>
-          <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
-            <%= link_to 'PROJECTS', "#", class: "btn btn-warning btn-lg btn-block" %><br>
+        <div class="col-xs-12 col-xs-offset-0 col-sm-5 col-sm-offset-1">
+          <div class="col-xs-12">
+            <div id="banner-subheading">UX Designer<br/>& Researcher</div>
+            <div id="banner-tagline">I guide the UX process to bridge business<br/>goals with consumer needs & desires.</div>
           </div>
         </div>
       </div>
+          <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-7 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+              <%= link_to 'PROJECTS', "#projects-update", class: "btn btn-warning btn-lg btn-block" %><br>
+            </div>
+          </div>
+        </div>
     </div>
-  </div>
+
+<!--UX Designer Section-->
   <div id="designer-update">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-2">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-1 col-md-4 col-md-offset-1 col-lg-3 col-lg-offset-2">
             <%= image_tag('stock-wire-flow.gif', :class=>'img-responsive') %>
         </div>
-        <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-0 col-md-6 col-md-offset-0 col-lg-3 col-lg-offset-1">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-1 col-md-4 col-md-offset-1 col-lg-3 col-lg-offset-1">
           <div id="designer-callout">I rock from IA &amp; journeys to wires &amp; prototypes.</div>
         </div>
       </div>
     </div>
   </div>
+
+<!--UX Researcher Section-->
   <div id="researcher-update">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-xs-10 col-xs-offset-1">
-          <div id="researcher-callout">I dive into research with the latest tools and strategies.</div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
+          <div id="researcher-callout">I dive into research with the latest tools & strategies.</div>
         </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1">
+          <a href="#" class="thumbnail">
+            <%= image_tag('journey.svg') %>
+          </a>
+          <p>Customer<br>Journeys</p>
+        </div>
+        <div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-0 col-md-2 col-md-offset-0">
+          <a href="#" class="thumbnail">
+            <%= image_tag('surveys.svg') %>
+          </a>
+          <p>Surveys</p>
+        </div>
+        <div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-0 col-md-2 col-md-offset-0">
+          <a href="#" class="thumbnail">
+            <%= image_tag('user-testing.svg') %>
+          </a>
+          <p>User Testing</p>
+        </div>
+        <div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-0 col-md-2 col-md-offset-0">
+          <a href="#" class="thumbnail">
+            <%= image_tag('taxonomy.svg') %>
+          </a>
+          <p>Taxonomy<br>Reviews</p>
+        </div>
+        <div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-0 col-md-2 col-md-offset-0">
+          <a href="#" class="thumbnail">
+            <%= image_tag('ab-testing.svg') %>
+          </a>
+          <p>A/B Testing</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1">
+          <a href="#" class="thumbnail">
+            <%= image_tag('card-sorting.svg') %>
+          </a>
+          <p>Card Sorting</p>
+        </div>
+        <div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-0 col-md-2 col-md-offset-0">
+          <a href="#" class="thumbnail">
+            <%= image_tag('heuristics.svg') %>
+          </a>
+          <p>Heuristic<br>Evaluations</p>
+        </div>
+        <div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-0 col-md-2 col-md-offset-0">
+          <a href="#" class="thumbnail">
+            <%= image_tag('inquiries.svg') %>
+          </a>
+          <p>Contextual<br>Inquiries</p>
+        </div>
+        <div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-0 col-md-2 col-md-offset-0">
+          <a href="#" class="thumbnail">
+            <%= image_tag('affinity.svg') %>
+          </a>
+          <p>Affinity<br>Diagramming</p>
+        </div>
+        <div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-0 col-md-2 col-md-offset-0">
+          <a href="#" class="thumbnail">
+            <%= image_tag('workshops.svg') %>
+          </a>
+          <p>Design Mapping Workshops</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--UX Projects Section-->
+  <div id="projects-update">
+    <div class="container-fluid">
+      <div class="row">
         <div class="col-xs-12">
-          <div class="thumbnail">
-            <%= image_tag('userzoom-researcher.png', :class=>'img-responsive') %>
+          <div id="projects-title">UX Projects</div>
+          <div id="projects-callout">Stories of my impact on technology solutions</div>
+        </div>
+      </div>
+      <div class="row">
+        <!--Rockfish Project Tile-->
+        <div class="col-xs-12 col-sm-6">
+          <div class="project-tile">
+            <div class="project-tile-effect">
+              <div class="thumbnail" data-toggle="modal" data-target="#rockfishModal">
+                <%= image_tag('rockfish-logo.png', :class=>'img-responsive') %>
+              </div>
+            </div>
+            <div class="project-thumbnail-description">Branding Content with Structure, Design, and Usability</div>
+          </div>
+        </div>
+        <!--Harman Project Tile-->
+        <div class="col-xs-12 col-sm-6">
+          <div class="project-tile">
+            <div class="project-tile-effect">
+              <div class="thumbnail" data-toggle="modal" data-target="#harmanModal">
+                <%= image_tag('harman-logo.png', :class=>'img-responsive') %>
+              </div>
+            </div>
+            <div class="project-thumbnail-description">Closing the Gaps on User Research with Collaboration Technologies</div>
+          </div>
+        </div>
+        <!--DART Project Tile-->
+        <div class="col-xs-12 col-sm-6">
+          <div class="project-tile">
+            <div class="project-tile-effect">
+              <div class="thumbnail" data-toggle="modal" data-target="#dartModal">
+                <%= image_tag('dart-logo.png', :class=>'img-responsive') %>
+              </div>
+            </div>
+            <div class="project-thumbnail-description">Using Mobile Heuristics to Facilitate User Flow Design</div>
+          </div>
+        </div>
+        <!--Memorial Hermann Project Tile-->
+        <div class="col-xs-12 col-sm-6">
+          <div class="project-tile">
+            <div class="project-tile-effect">
+              <div class="thumbnail" data-toggle="modal" data-target="#memorialModal">
+                <%= image_tag('memorialhermann-logo.png', :class=>'img-responsive') %>
+              </div>
+            </div>
+            <div class="project-thumbnail-description">Designing with Empathy</div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div id="projects-update">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-10 col-xs-offset-1">
-          <div id="projects-callout">Projects</div>
+
+    <!-- Project Modals -->
+    <div id="project-modal-styles">
+      <!-- Rockfish Modal -->
+      <div class="modal fade" id="rockfishModal" tabindex="-1" role="dialog" aria-labelledby="projectLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h5 class="modal-title" id="rockfishModalLabel">UX Designer - Rockfish Digital - 2017</h5>
+            </div>
+            <div class="modal-body">
+              <h3>Branding Content with Structure, Design, and Usability</h3>
+
+              <p>For the Rockfish Digital's UX team, I developed content solutions with research, analysis, and site mapping and articulated the solutions with wireframes. The complex network of wireframes would satisfy a national client's need to enhance their brand and promote veterinarian data and research to students and professionals.</p>
+
+              <h5>PROBLEM</h5>
+              <p>With a complex amount of content and a short deadline, the design project had 3 obstacles:</p>
+              <ul>
+                <li>Structure the content types so that CMS editors can easily manage, update, and create effective content,</li>
+                <li>Design the web content so that the client meets their marketing goals of enhancing their brand, and</li>
+                <li>Facilitate the navigation, searchability, and findability of content by designing the wireframes in consideration of prominent usability practices.</li>
+              </ul>
+              <h5>SOLUTION</h5>
+              <p>Collaborating with the content strategist and UX lead, we examined the information architecture and client needs. To design the solution, I researched the brand, used affinity diagramming to create site maps, and with Sketch, developed a system of wireframes that were organized and cataloged by navigation and hierarchy.</p>
+              <h5>OUTCOME</h5>
+              <p>With a design goal of facilitating an efficient IA and proper usability, the wireframes complied with the needs of content editors, users, and the brand by including 8 unique templates that would satisfy a breadth of content with a consistent structure and design. Extra attention was given to user interactions such as browsing content, searching for content, filtering searches, and discovering new content.</p>
+              <%= image_tag('rockfish-wires.png', :class=>'img-responsive') %>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Harman Modal -->
+    <div class="modal fade" id="harmanModal" tabindex="-1" role="dialog" aria-labelledby="projectLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h5 class="modal-title" id="harmanModalLabel">UX Researcher - Harman International - 2017</h5>
+          </div>
+          <div class="modal-body">
+            <h3>Closing the Gaps on User Research with Collaboration Technologies</h3>
+            <p>For Harman's UX team, I guided a groundbreaking research project that analyzed the use of software in the implementation of AV&amp;C networks within consumer and business infrastructures. The extensive research project comprised a global team of collaborators, project stakeholders, and research participants.</p>
+            <h5>PROBLEM</h5>
+            <p>The complex and technical research project had obstacles to communication and collaboration with the widespread locations of collaborators, stakeholders, and participants.</p>
+            <h5>SOLUTION</h5>
+            <p>At the central point of research in Dallas, Texas, I successfully implemented and managed the use of cloud-based technologies both as a central space to facilitate research and as a collaboration tool for producing user research deliverables.</p>
+            <%= image_tag('cloud-software.png', :class=>'img-responsive') %>
+            <h5>OUTCOME</h5>
+            <p>As app platforms such as Trello, G Suite, and Slack became central points of consensus, debate, synthesis, insight, organization, and production, the research project reached a new depth with its continuous engagement. The digital collaboration resulted in a fruitful meeting of the minds in a real-world design mapping workshop.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
+      <!-- Dart Modal -->
+    <div class="modal fade" id="dartModal" tabindex="-1" role="dialog" aria-labelledby="projectLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h5 class="modal-title" id="dartModalLabel">UX Designer - DART - 2017</h5>
+          </div>
+          <div class="modal-body">
+            <h3>Using Mobile Heuristics to Facilitate User Flow Design</h3>
+            <p>For the marketing team at DART, I consulted on the design of a mobile app. Working with wireframes initially created by a development team in Denmark, I had a two weeks to analyze the structure, flow, and design of the app and develop recommendations for the next iteration.</p>
+            <h5>PROBLEM</h5>
+            <p>With the marketing team's concern with the current state of the app's design, the project had 3 obstacles:</p>
+            <ul>
+              <li>The UI did not reflect the structure and design of contemporary apps,</li>
+              <li>The design and copy did not capture the brand identity, and</li>
+              <li>The user flows such as registration and payment were neither concise or clear.</li>
+            </ul>
+            <h5>SOLUTION</h5>
+            <p>With a short amount of time, I relied on UX tools and strategies to provide design and user flow recommendations. To develop recommendations I relied on mobile heuristics, which were developed with research and testing. With a criteria focused on the mobile app environment, I was able to pinpoint the problem areas in usablity and develop recommendations that would improve the existing user flows. With a competitive analysis, I was able to design recommendations that would improve the UI and match the style of the DART brand.</p>
+            <%= image_tag('dart-train.png', :class=>'img-responsive') %>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- Memorial Hermann Modal -->
+    <div class="modal fade" id="memorialModal" tabindex="-1" role="dialog" aria-labelledby="projectLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h5 class="modal-title" id="memorialModalLabel">Web Designer - Memorial Hermann - 2016-2017</h5>
+          </div>
+          <div class="modal-body">
+            <h3>Designing with Empathy</h3>
+            <p>For the digital marketing team at Memorial Hermann, the largest not-for-profit healthcare system in Texas, I developed wireframes for a site that would facilitate prescription fullfillment of specialty pharmaceuticals. The high profile site would need to build trust with patients with chronic conditions who would use the site to fulfill high-cost prescriptions.</p>
+            <h5>PROBLEM</h5>
+            <p>As a new online campaign for the Specialty Pharmacy department, the design project had the following goals:</p>
+            <ul>
+              <li>Build trust with patients so they would use the site to manage refills,</li>
+              <li>Design the navigation so that patients could easily find information about the pharmacy's services, and</li>
+              <li>Provide a better designed site compared to other specialty pharmacy sites.</li>
+            </ul>
+            <h5>SOLUTION</h5>
+            <p>To understand the perspective of specialty pharmacy patients, personas were created to point out the common goals and frustrations of these patients who needed to refill prescriptions. The personas and research process brought me to empathize with the patient early on in the design of the site. With this empathetic grasp of the patient's perspective, key strategies were developed to both build trust and convey information to the patient.</p>
+            <%= image_tag('pharmacy-wire.png', :class=>'img-responsive') %>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!--End of Project Modals-->
+
+</div><!--End of Homepage Update-->

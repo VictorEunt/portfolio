@@ -1,14 +1,14 @@
 Rails.application.routes.draw do
   resources :clients
 
-  root "pages#home"
+  root "pages#home-beta"
   get "about" => "pages#about"
   get "projects" => "pages#projects"
   get "contact" => "clients#new"
   get "techcorp" => "pages#techcorp"
   get "americanheart" => "pages#americanheart"
   get "overturemarketplace" => "pages#overturemarketplace"
-  get "home-beta" => "pages#home-beta"
+  get "home-beta" => "pages#home"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
